@@ -1,0 +1,8 @@
+{
+  "apps/api-core/server.js": "7ca8d59c36e95b4078f75aa593e1eeca033cdb30e957db3a877c634f0dc4b314",
+  "apps/web/src/App.tsx": "fe5fb4e0d18cdd71045efb2672161e4d2cce82d5ab0e05400dd2fb4ed3d2f860",
+  "apps/web/src/components/layout/Sidebar.tsx": "81ab97f56bc7fa04cf74c6739747d46fd6ef8cc0231c72c973928132c59f747c",
+  "packages/crypto-sdk/index.js": "7afd6891c07e0cca751adbfcac5300a64d3d3ab6c1d72edc1bb066ce69a91073",
+  "packages/auth-sdk/sso.js": "c48af31a78f6fa111565051fb6db87bc16d9c84876df4988ef6652c83e2dc9fb",
+  "services/coding-gateway/index.js": "55f970e62c8e14d1733f405318202c0c8890396eace861c370e96c472b7f6f59"
+}

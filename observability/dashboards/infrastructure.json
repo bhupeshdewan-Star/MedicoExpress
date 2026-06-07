@@ -1,0 +1,48 @@
+{
+  "id": 102,
+  "title": "ClinCommand OS™ – Infrastructure Monitor",
+  "uid": "infrastructure_dashboard",
+  "style": "dark",
+  "panels": [
+    {
+      "id": 1,
+      "title": "AWS/Azure/GCP Compute CPU Utilization",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode=\"idle\"}[5m])) * 100)",
+          "legendFormat": "Instance: {{instance}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "PostgreSQL Active Server Connections",
+      "type": "gauge",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "pg_stat_database_numbackends",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Kafka Broker Cluster Ingestion Lag",
+      "type": "stat",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "kafka_consumergroup_lag",
+          "legendFormat": "Topic: {{topic}}",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 36,
+  "tags": ["infrastructure", "ops"]
+}

@@ -1,0 +1,18 @@
+{
+  "method": "chi-square",
+  "data": {
+    "table": [
+      [15, 25],
+      [30, 10]
+    ]
+  },
+  "expected": {
+    "chi2_statistic": 9.955555555555556,
+    "p_value": 0.0016036472624141077,
+    "dof": 1
+  },
+  "tolerance": {
+    "chi2_statistic": 0.1,
+    "p_value": 0.001
+  }
+}

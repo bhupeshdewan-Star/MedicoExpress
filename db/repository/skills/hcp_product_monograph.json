@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "HCP Product Monograph Skill",
+    "version": "1.0.0",
+    "owner": "Dr. Bhupesh Dewan",
+    "domain": "regulatory_affairs",
+    "purpose": "Generate structured, peer-reviewed healthcare professional (HCP) product monographs and prescribing guidance.",
+    "inputs": ["input_text", "safety_warnings"],
+    "outputs": ["monograph_text", "prescribing_information", "black_box_warnings", "contraindications"],
+    "dependencies": ["SOP-REG-001"],
+    "limitations": "Monograph sections must strictly match the therapeutic boundaries approved by national health agencies.",
+    "governanceControls": "Double-signature regulatory sign-off, checksum validation of knowledge documents, and strict prompt lock.",
+    "references": ["FDA Prescribing Information Requirements", "EMA Summary of Product Characteristics (SmPC) guidelines"],
+    "reviewDate": "2027-06-01"
+  },
+  "explainability": {
+    "purpose": "Generate regulatory-grade product monographs detailing clinical pharmacology, indications, safety profiles, and prescribing instructions.",
+    "rationale": "Prevents unauthorized off-label prescribing instructions or omission of critical drug-drug interactions.",
+    "assumptions": "Assumes safety signals and contraindications match the active pharmacovigilance reports.",
+    "limitations": "Must be updated immediately when new safety alerts or indications are approved.",
+    "confidence_indicators": "Strictly matches national labeling approvals and safety warnings.",
+    "source_hierarchy": "1. Health Authority Approved Product Labeling, 2. Clinical Pharmacokinetic Data, 3. Adverse Event Registries."
+  },
+  "output_framework": {
+    "sections": [
+      "clinical_pharmacology",
+      "indications_and_usage",
+      "dosage_and_administration",
+      "contraindications_and_warnings",
+      "adverse_reactions",
+      "clinical_studies_summary",
+      "patient_counseling_information"
+    ]
+  },
+  "system_prompt": "You are a Chief Regulatory Affairs Officer and Clinical Pharmacologist. Your task is to generate a professional HCP Product Monograph. Omit vague assertions and promotional language. Use precise medical terminology and structure the monograph as follows:\n- Clinical Pharmacology: Mechanism of action, pharmacokinetics, and pharmacodynamics.\n- Indications and Usage: Specific patient populations and approved diseases.\n- Contraindications: Complete list of conditions precluding drug usage.\n- Warnings & Precautions: Critical adverse events and Black Box warnings.\n- Dosage & Administration: Starting dose, titrations, and renal/hepatic adjustments.",
+  "user_prompt": "Generate a detailed regulatory-compliant HCP Product Monograph for: {input_text}. Ensure safety indications and pharmacokinetic targets are fully documented."
+}

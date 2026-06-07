@@ -1,0 +1,10 @@
+{
+  "name": "rbm-ai-service",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Python FastAPI RBM Machine Learning Scoring Engine",
+  "private": true,
+  "scripts": {
+    "start": "uvicorn main:app --host 0.0.0.0 --port 8000",
+    "test": "pytest"
+  }
+}

@@ -1,0 +1,100 @@
+PURPOSE
+This procedure describes the process for designing, revising and distributing Product Rationale for a medicinal product and intended to be circulated among the Regulatory Affairs Team and the Medical Affairs Team.
+SCOPE
+This SOP is applicable to all the designated personnel responsible for designing of the Product Rationale and for ensuring the timely update of relevant data.
+RESPONSIBILITY
+The Author of the Product Rationale is responsible for preparing the initial draft and discusses it with the Medical Director for review, comments and final approval before dispatching it to the Regulatory Affairs Team.
+The author is responsible for timely revision and updating of the Product Rationale.
+POLICY
+The first copy of all SOPs will be maintained in a soft copy form with the original signatures in the custody of the Quality Assurance Department. Second copy will be made available in the controlled form for reference by employees. The forms, templates and checklists will have restricted access to employees.
+GENERAL PRINCIPLES
+What is a Product Rationale?
+A Product Rationale is a document aimed at establishing the pharmacological justification of a medicinal product.
+General Instructions:
+Product Rationale should be prepared with the following guiding principles:
+Avoid duplication of information. Wherever possible, information should only be presented once.
+The background of the rationale should be relevant to the product and should not cause distraction from the contents.
+Justification of all claims should be addressed in a stepwise and coherent manner.
+Reference should be added in Vancouver style at the end of the document.
+The key points should be summarized at the end of the document.
+Revisions
+Revisions should be initiated by the sponsor/company whenever significant updating of the Product Rationale is required in order to incorporate additions or other changes related to safety (particularly with respect to warnings, precautions, adverse reactions, and mode of administration) that may be necessary as a result of newly available information.
+The Product Rationale should also be revised whenever substantial information is available to support significant new indications or when other changes or deletions in the indications and conditions of use are required as a result of additional available information.
+Distribution
+Soft copy of the Product Rationale should be provided to the Regulatory Affairs Team and the Medical Affairs Team.
+PROCEDURES
+Composition
+The composition of the product should be given in details, including the list of excipients.
+Background
+This section should give an overview of the condition for which the concerned product is prescribed. The gap in current therapy should be described to justify the need of the product in consideration.
+Justification of therapy
+A description of the need of the concerned product in prophylaxis or treatment of a medical condition should be outlined in this section. Relevant national and international guidelines should be quoted, wherever they are applicable, for justifying the efficacy and safety of the product.
+Pharmacodynamic Justification
+This section should address the following areas:
+The mechanism of action of the product should be discussed
+All relevant pharmacodynamic properties of the product
+In case of a FDC, the complementary actions of the different components of the combination
+Pharmacokinetic Justification
+This section should comprise of the following:
+A brief description of the relevant pharmacokinetic parameters of the product
+In case of a FDC, pharmacokinetic justification of the combination
+Justification of Formulation
+This section should provide justification of the formulation of the medicinal product. Relevant national or international guidelines, if available, are to be mentioned here.
+In case of a FDC, the following aspects should be addressed:
+No physical interaction between the components.
+No chemical interaction between the components.
+Stability of the formulation is ensured as per the ICH guidelines.
+Discussion on the Medicinal Product
+Indication:
+This section should contain a listing of the indications, followed by a brief discussion of any relevant clinical information.
+The indications to be described in this section should be approved by DCGI.
+Justification of Dose:
+Dosing Considerations
+This section should briefly list the safety issues to consider when administering a dosage regimen in an individual patient (e.g., renal/hepatic disease, age, concomitant therapy, genetic polymorphism, and titration).
+Recommended Dose and Dosage Adjustment
+This section should provide detailed and practical information on the recommended dosage.
+The section should include: dosage schedules, the initial dose, the optimal method of titrating dosage, the dosage range, maximum daily dose, maintenance dosage, duration of treatment and drug discontinuation schedule.
+Guidance should be given on the dosage adjustments necessary when administering the drug in special populations (e.g., children, elderly) or in the presence of co-morbidities (e.g., renal disease, hepatic disease, genetic polymorphism).
+When an age descriptor is used (e.g., children), the age range should be specified.
+If no dosage adjustments are required a statement to that effect should be included (e.g., No dosage adjustment required in hepatic or renal impairment).
+The time of day for optimal drug effect should be indicated (e.g., evening, morning etc.) where applicable.
+Timing of administration of a dose with respect to food should be indicated.
+Contraindication/s:
+This section should describe situations in which the drug should not be used because the risk outweighs any potential therapeutic benefit.
+For hypersensitivity reactions, the statement used should be: Patients who are hypersensitive to this drug or to any ingredient/excipients in the formulation.
+Use in Specific populations:
+Pregnancy & Lactation
+Paediatrics
+Elderly
+Hepatic & Renal Impairment
+Warnings & Precautions
+Adverse Reaction
+This section should contain information on all types of adverse drug reactions (ADRs) in a tabulated form including those identified during clinical trials and as a result of post-market surveillance. Information relating to clinical trial ADRs and post-market ADRs should be presented separately.
+The standard for defining frequency terms will be based on the Council for International Organizations of Medical Science (CIOMS) convention. Specifically:
+Very common: ≥1/10 (≥10%);
+Common (frequent): ≥1/100 and <1/10 (≥1% and <10%);
+Uncommon (infrequent): ≥1/1,000 and <1/100 (≥0.1% and <1%);
+Rare: ≥1/10,000 and <1/1,000 (≥0.01% and <0.1%);
+Very rare: <1/10,000 (<0.01%), including isolated reports.
+Conclusion: In this section, a closing statement on the rationale of the product based on pharmacokinetics, pharmacodynamics and correct formulation should be made.
+References: Relevant references should be cited in Vancouver style of referencing.
+REVIEW SUMMARY
+
+[TABLE 1]
+ |  | SOP. No.: COMPANY_MM_10 / Version No.: 1
+Confidential | Effective Date: | Supersedes: None
+Confidential | Review Date: | Review Date:
+SOP Title: Preparation of Product Rationale | SOP Title: Preparation of Product Rationale | SOP Title: Preparation of Product Rationale
+
+[TABLE 2]
+ | Prepared By | Reviewed  By | Approved By
+Name |  |  | 
+Designation |  |  | 
+Sign & date |  |  | 
+
+[TABLE 3]
+Sr. / No. | Pg. No. | Section/Clause/Para/ line | Date of Amendment | Amendment made | Reasons of Amendment
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 

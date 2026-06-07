@@ -1,0 +1,14 @@
+{
+  "method": "kaplan-meier",
+  "data": {
+    "durations": [10.0, 20.0, 35.0, 40.0, 50.0],
+    "events": [1, 0, 1, 1, 0]
+  },
+  "expected": {
+    "timeline": [0, 10, 20, 35, 40, 50],
+    "survival_probability": [1, 0.8, 0.8, 0.5333, 0.2666, 0.2666]
+  },
+  "tolerance": {
+    "survival_probability": 0.01
+  }
+}

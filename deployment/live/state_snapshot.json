@@ -1,0 +1,19 @@
+{
+  "status": "SYSTEM_EMERGENCY_ROLLED_BACK",
+  "activeTenantLoad": {
+    "1": 0,
+    "2": 150
+  },
+  "healthScores": {
+    "apiCore": 40,
+    "rbmAi": 100,
+    "eproSync": 100,
+    "wearables": 100
+  },
+  "queueDepths": {
+    "epro": 12,
+    "telemetry": 45,
+    "ocr": 0
+  },
+  "lastTransitionTime": "2026-06-04T01:41:51.462Z"
+}

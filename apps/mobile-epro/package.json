@@ -1,0 +1,18 @@
+{
+  "name": "mobile-epro",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - React Native ePRO Mobile Client Scaffolding",
+  "private": true,
+  "main": "App.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-sqlcipher-storage": "^5.0.0"
+  }
+}

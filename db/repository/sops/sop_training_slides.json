@@ -1,0 +1,24 @@
+{
+  "code": "SOP-MA-002",
+  "title": "Standard Operating Procedure for MSL Training Slides Development",
+  "category": "Medical Affairs Operations",
+  "version": "1.0.0",
+  "status": "APPROVED",
+  "effective_date": "2026-01-01",
+  "review_date": "2027-06-01",
+  "explainability": {
+    "purpose": "Ensures that all slide materials used by MSLs are grounded in primary evidence and compliant with labeling laws.",
+    "inputs": ["prescribing_information", "clinical_trial_summary"],
+    "outputs": ["slides_outline", "speaker_notes"],
+    "limitations": "Prohibits the inclusion of unapproved promotional claims.",
+    "governanceControls": "Requires MSL board review and prompt locking.",
+    "traceabilityReferences": ["SOP-MA-002"]
+  },
+  "steps": [
+    { "index": 1, "instruction": "Correlate slide text points with approved Prescribing Information.", "status": "PENDING" },
+    { "index": 2, "instruction": "Generate speaker notes explaining endpoints and patient exclusions.", "status": "PENDING" },
+    { "index": 3, "instruction": "Insert black-box safety warnings in prominent locations.", "status": "PENDING" },
+    { "index": 4, "instruction": "Validate all draft slides through the QA compliance gate.", "status": "PENDING" }
+  ],
+  "content": "# SOP-MA-002: MSL Slides Development\n## 1. Purpose\nEstablishes rules for creating MSL training decks.\n## 2. Procedure\n1. Align with PI. 2. Write notes. 3. Include warnings. 4. Run QA review."
+}

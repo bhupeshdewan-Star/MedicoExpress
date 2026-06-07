@@ -1,0 +1,112 @@
+PURPOSE
+This procedure describes the process for answering of medical and medicinal product related queries of medical professionals, PMT, consumers and field representatives.
+SCOPE
+This SOP is applicable to all the designated personnel responsible for responding to medical queries raised by medical professionals, PMT, consumers and field representatives.
+RESPONSIBILITY
+The author of the answers to the medical queries is responsible for preparing the initial draft and discusses it with the Medical Director for review, comments and final approval before dispatching it to the concerned person.
+Always send a carbon copy (Cc) of all email messages to concerned HO Product Management Team and BO, ABM, RBM, DSM, ZSM, SM, GM, VP, Director to keep all in the loop of a conversation.
+POLICY
+The first copy of all SOPs will be maintained in a soft copy form with the original signatures in the custody of the Quality Assurance Department. Second copy will be made available in the controlled form for reference by employees. The forms, templates and checklists will have restricted access to employees.
+GENERAL PRINCIPLES
+The answers to medical queries should be prepared with the following guiding principles as a basis for the information:
+Queries should be answered on a first come first serve basis and preferably on the same day (reply with 24 hours) when they are raised.
+Avoid duplication of information.
+Key information should be easy to locate, preferably highlighted.
+The information provided in the answer to a query must be collated from authentic sources.
+PROCEDURES
+Literature Search:
+Relevant information should be searched from PubMed, Google, Google Images and Google Scholar.
+Use of appropriate keywords is necessary to procure relevant information.
+Latest articles from reputed journals and latest recommendations from internationally accepted authorities should be given priority while searching for answers to medical queries.
+The literature collected should be thoroughly assessed to ensure authenticity and relevance regarding the query under consideration.
+Framing an Appropriate Answer:
+Start letter with right salutation, greet the email recipient, be polite, begin by stating the purpose of letter, close with contact information (department email etc.)
+Answers should be thorough and cover every aspect of the topic/s related to the query.
+Appropriate references should be attached with the response and important text in them should be highlighted for easy retrieval of relevant information.
+Medical queries received from consumers should be handled in an appropriate manner. They should be apprised of the fact that being a responsible pharmaceutical house, it is beyond our jurisdiction to answer medical queries raised by them. It is prudent on the part of the consumers to get their medical as well as medicinal product related queries solved by their treating doctor.
+Documentation
+Query reply should be written on Company Letter Head and the author of the answers to the medical queries should sign it and make the pdf of word document before sending. Send the pdf file along with supporting references to concerned person.
+Query reply must be stored in “Query” folder, in respective Subfolder “brand name of drug” in Medical Drive (Database) on the same day.
+REVIEW SUMAMRY
+Date: 03-11-2022
+To
+Dear Dr. Kaustabh Chowdhury,
+Pediatrician
+Apollo Hospital, Kolkata.
+Subject: Information regarding Ancool suspension use in pediatric patients
+Dear Dr. Kaustabh Chowdhury,
+We thank you very much for giving a warm reception to our Mr. Sumanta Dey, ABM Kolkata, Company healthcare Ltd. and showing keen interest in our product Ancool syrup. We understand that you want more information regarding elemental Magnesium in Ancool suspension and its pediatric dosage. We would like share a published literature on the same.
+Amount of elemental Magnesium present in Ancool suspension?
+Ans: Magnesium hydroxide (Milk of Magnesia) contains 42% elemental magnesium. Each 5 ml of Ancool suspension contains Magnesium Hydroxide 150 mg. Therefore, the 5 ml of Ancool suspension contains 63 mg of elemental magnesium.
+Recommended dosage of Ancool suspension for Pediatric use?
+Ans: 1-2 teaspoonful (approx. 5-10 ml) 30-60 min after meals or whenever symptoms are pronounced.
+However, dose requirements for young children (up to 6 years of age) have not been extensively evaluated. Antacids should not be given to young children (up to 6 years of age) unless prescribed by a physician. Since children are usually not able to describe their symptoms precisely, proper diagnosis should precede the use of an antacid. This will avoid the complication of an existing condition (e.g., appendicitis) or the appearance of severe adverse effects
+Oral dosage and tolerable upper intake level of Magnesium in Children
+Children (1 to 3 years of age): 65 mg per day
+Children (4 to 8 years): 110 mg per day
+Children (> 8 years):  350 mg per day
+Supporting references are also attached here.
+We hope that this clarifies the queries. If you would like to seek any further information, then please feel free to contact or write directly to us at medico@Company.com
+Thanks and Regards,
+Dr. Sanjaykumar Navale
+MBBS, MD
+Asst. GM, Medical Services Department
+Company Healthcare Ltd. Mumbai
+Ext:3213, Mobile:9819826562
+Reference: Mary P. Guerrera. Therapeutic Uses of Magnesium. Am Fam Physician. 2009;80(2):157-162.
+Date:
+To,
+Dr. Ketan H. Shah,
+, .
+Subject: Information on Cortimax Syrup
+Dear Dr. Shah,
+We thank you very much for giving a warm reception to our Mr. Mahesh Vishwakarma and showing keen interest in our product Cortimax syrup. We understand that you want more information on the role of deflazacort (Cortimax) in the pediatric age group. We would like share a few interesting published literatures on the same.
+Deflazacort has been successfully used to treat a variety of pediatric disorders including (A) Duchenne Muscular Dystrophy (DMD), (B) Nephrotic syndrome, (C) Asthma, (D) Juvenile Chronic Arthritis (E) Epilepsy as well as in maintainence therapy in children having undergone renal transplantation. [1-15]
+In patients with DMD, deflazacort use resulted in better preservation of the T2 relaxation time of myocardium and sternocleidomastoid muscles, better  systolic function [1], and better preservation of gross motor and pulmonary function [2] with limited adverse effects. Long term studies (follow up of 18 yrs) also have shown that deflazacort has a very significant impact on health, and quality of life of these patients. [3]
+In case of patients undergoing renal transplantation, deflazacort improved linear growth, lean body mass, lipoprotein profile and prevented excessive bone loss and fat accumulation. [4]
+Deflazacort is found to be as efficacious, if not better, than many other corticosteroids. In children affected by drug resistant epilepsy, it was seen that adverse events were common in those receiving hydrocortisone (37%) as compared to those receiving deflazacort (0%). [5] Comparisons have also been made with methylprednisolone; deflazacort showing improved growth velocity, HDLC levels and decreased apolipoprotein B levels. [6] Deflazacort use in renal transplant children also resulted in higher growth hormone (GH) peak response than methlyprednisolone. [7]
+Comparisons with prednisolone in various conditions have found that deflazacort causes less weight gain [8], has lower negative impact on the indicators of growth [9, 10], is significantly more effective in maintaining remissions than prednisolone in children with nephritic syndrome [11, 12], improves pulmonary functions and management of acute moderate asthma [13] and most importantly, has bone sparing properties. [14, 15]
+Thus, it can be concluded that deflazacort can be safely used in the pediatric age group.  Supporting references are attached here.
+We hope that this clarifies the queries. If you would like to seek any further information, then please feel free to contact our Mr. Vishwakarma or write directly to us at medico@Company.com
+Kind regards,
+Dr. Bhupesh Dewan M.B.B.S; M.D
+Director Medical Services
+Company Healthcare Ltd.
+Plot No. Y2, Near Nahur Railway Station,
+Nahur (West) Mumbai, 400078
+Tel: +91-22-20812898
+References:
+Mavrogeni S, Papavasiliou A, Douskou M et al. Effect of deflazacort on cardiac and sternocleidomastoid muscles in Duchenne muscular dystrophy: a magnetic resonance imaging study. Eur J Paediatr Neurol. 2009 Jan;13(1):34-40.
+Biggar WD, Gingras M, Fehlings DL et al. Deflazacort treatment of Duchenne muscular dystrophy. J Pediatr. 2001 Jan;138(1):45-50.
+Biggar WD, Harris VA, Eliasoph L et al. Long-term benefits of deflazacort treatment for boys with Duchenne muscular dystrophy in their second decade. Neuromuscul Disord. 2006 Apr;16(4):249-55.
+Ferraris JR, Pasqualini T, Alonso G et al. Effects of deflazacort vs. methylprednisone: a randomized study in kidney transplant patients. Pediatr Nephrol. 2007 May;22(5):734-41.
+Grosso S, Farnetani M, Mostardini R et al. A comparative study of hydrocortisone versus deflazacort in drug-resistant epilepsy of childhood. Epilepsy Res. 2008 Sep;81(1):80-5.
+Ferraris JR, Pasqualini T, Legal S et al. Effect of deflazacort versus methylprednisone on growth, body composition, lipid profile, and bone mass after renal transplantation. The Deflazacort Study Group. Pediatr Nephrol. 2000 Jul;14(7):682-8.
+Ferraris J, Pasqualini T, Gutman R et al. Growth hormone--insulin-like growth factor-I (IGF-I) axis in prepubertal children with chronic renal failure. J Pediatr Endocrinol Metab. 1997 Jan-Feb;10(1):19-25.
+Campbell C & Jacob P. Deflazacort for the treatment of Duchenne Dystrophy: a systematic review. BMC Neurol. 2003 Sep 8;3:7.
+Aicardi G, Benso L, Vignolo M et al. Dose-dependent effects of deflazacort and prednisone on growth and skeletal maturation. Br J Rheumatol. 1993 May;32 Suppl -43.
+Aicardi G, Milani S, Imbimbo B et al. Comparison of growth retarding effects induced by two different glucocorticoids in prepubertal sick children: an interim long-term analysis. Calcif Tissue Int. 1991 Apr;48(4):283-7.
+Hodson EM, Willis NS & Craig JC. Corticosteroid therapy for nephrotic syndrome in children. Cochrane Database Syst Rev. 2007 Oct 17;(4):CD001533
+Hodson EM, Knight JF, Willis NS et al. Corticosteroid therapy for nephrotic syndrome in children. Cochrane Database Syst Rev. 2004;(2):CD001533.
+Gartner S, Cobos N, Pérez-Yarza EG et al. Comparative efficacy of oral deflazacort versus oral prednisolone in children with moderate acute asthma. An Pediatr (Barc). 2004 Sep;61(3):207-12.
+Loftus JK, Reeve J, Hesp R et al. Deflazacort in juvenile chronic arthritis. J Rheumatol Suppl. 1993 Apr;37:40-2.
+Loftus J, Allen R, Hesp R et al. Randomized, double-blind trial of deflazacort versus prednisone in juvenile chronic (or rheumatoid) arthritis: a relatively bone-sparing effect of deflazacort. Pediatrics. 1991 Sep;88(3):428-36.
+
+[TABLE 1]
+ |  | SOP. No.: COMPANY_MM_08 / Version No.: 1
+Confidential | Effective Date: | Supersedes: None
+Confidential | Review Date:  30/03/2023 | Review Date:  30/03/2023
+SOP Title: Preparation of Answers for Medical Queries | SOP Title: Preparation of Answers for Medical Queries | SOP Title: Preparation of Answers for Medical Queries
+
+[TABLE 2]
+ | Prepared By | Reviewed  By | Approved By
+Name |  |  | 
+Designation |  |  | 
+Sign & date |  |  | 
+
+[TABLE 3]
+Sr. / No. | Pg. No. | Section/Clause/Para/ line | Date of Amendment | Amendment made | Reasons of Amendment
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 

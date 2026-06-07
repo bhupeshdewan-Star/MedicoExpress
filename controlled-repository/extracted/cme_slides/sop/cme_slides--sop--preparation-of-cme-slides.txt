@@ -1,0 +1,146 @@
+PURPOSE
+This procedure describes the process for designing, revising and distributing CME Slides for a medicinal product and intended to be circulated among the Product Management Team.
+SCOPE
+This SOP is applicable to all the designated personnel responsible for designing of the CME Slides and for ensuring the timely update of relevant scientific data.
+RESPONSIBILITY
+The Author of the CME Slides is responsible for preparing the initial draft and discusses it with the Medical director for review, comments and final approval before dispatching it to the Product Management Team.
+The author is responsible for timely revision and updating of the CME Slides.
+POLICY
+The first copy of all SOPs will be maintained in a soft copy form with the original signatures in the custody of the Quality Assurance Department. Second copy will be made available in the controlled form for reference by employees. The forms, templates and checklists will have restricted access to employees.
+GENERAL PRINCIPLES
+What are CME Slides
+CME Slides are prepared in the form of a Microsoft PowerPoint presentation and consists of information on a single subject (new drug) or an aspect of a subject, usually by a single author. The language used is essentially medical along with appropriate use of standard scientific terminologies, medical evidences and definitions wherever needed. The CME Slides presentation is essentially divided into two sections:
+Introduction to relevant concepts pertaining to the medicinal product under consideration in a scientifically sound language
+Drug related information
+General Instructions:
+CME Slides should be prepared with the following guiding principles:
+Avoid duplication of information. Wherever possible, information should only be presented once.
+Numbering of the slides should be done.
+Title slide should be prepared with Brand Name and Generic Name of the concerned medicinal product.
+The background of the slides should be relevant to the presentation and should not cause distraction from the contents.
+The contents of the slide should not look crowded and cumbersome. Proper spacing should be given between points.
+An overview of the presentation should be outlined in the beginning.
+Each Slide should have a title with a text size of 36-40.
+The contents of the slides should have a text size from 24-28.
+Reference should be added in each slide wherever it is applicable
+Use of suitable animations, clip art, pictures, tables and graphs is highly recommended.
+Identifiable photographs of patients should not be used. Remove all patient identifiers from laboratory studies, x-rays, imaging studies, slides, etc. OR obtain written permission from the patient to use his/her information as part of CME presentation.
+The presentation must be free of any commercial bias for or against any product.
+The presentation should be summarized at the end and key points should be highlighted.
+Revisions
+Revisions should be initiated by the sponsor/company whenever significant updating of the CME Slides is required in order to incorporate additions or other changes related to safety (particularly with respect to warnings, precautions, adverse reactions, and mode of administration) that may be necessary as a result of newly available information.
+The CME Slides should also be revised whenever substantial information is available to support significant new indications or when other changes or deletions in the indications and conditions of use are required as a result of additional available information.
+Distribution
+Soft copy of the CME Slides should be provided to Product Management Team.
+PROCEDURES
+Title Slide
+The Title Slide should have the following information:
+The brand name of the drug product (highlighted)
+The proper or common name of the drug product(s) in final dosage form
+Sponsor Name (company)
+Overview of the Presentation
+The overview should contain the broad topics covered in the presentation written in the order of appearance.
+Introduction/Background
+The introduction slide/slides should contain a brief description of the disease/disorder of concern. An overview of factors which have led to the problem, comprise the problem and historical/epidemiological significance relative to the problem should be briefly outlined.
+Pathophysiology of the disease/Disorder
+This section should outline the disturbance of normal mechanical, physical and biochemical function that the concerned disease/disorder causes or that which causes the disease.
+Current Treatment options & Gap in Existing Therapy
+The current available treatment options should be discussed briefly. The gap in present therapy and the areas of concern should be addressed.
+Guidelines and Recommendations for Disease/Disorder Management
+Latest Treatment Guidelines and Recommendations should be outlined briefly and if available the place of the concerned medicinal product in them should be highlighted.
+Discussion on the Medicinal Product
+Description:
+Proper name or common name;
+Chemical name;
+Molecular formula and molecular mass;
+Structural formula, including relative and absolute stereochemistry;
+Relevant physicochemical properties, for e.g., physical description, solubility over the physiological pH range, polymorphic form
+Clinical Pharmacology
+This section should include a concise synopsis of the salient features of the drug's mechanism/s of action, pharmacodynamics and pharmacokinetics. The information should have a demonstrated relevance to the pharmacology or pharmacodynamics of the drug in humans.
+Mechanism of Action
+A brief description of the mechanism by which the drug achieves its pharmacological effect should be outlined here.
+Pharmacodynamics
+This section should include a brief description of factors that may affect pharmacodynamic response (clinical effectiveness, safety, and dose-response).
+Microbiology
+This section is needed for all antimicrobial drugs. It should comprise of laboratory studies and be divided, where appropriate, into in vitro and in vivo sub-sections. Details regarding susceptibility testing, reference pathogens studied should be included. Information on drug resistance and cross-resistance should be included.
+Pharmacokinetics
+A summary table of the most clinically significant pharmacokinetic features should be presented in a table. This section should also include a short explanation of the clinical significance of the basic pharmacokinetic data for the general population, under the following headings:
+Absorption
+Information regarding the drug's properties, such as area under the curve (AUC), Tmax, Cmax, time of onset of action, effect of food on absorption and time to steady state.
+Distribution
+Degree of protein binding, volume of distribution (Vd), sites of distribution, including whether the drug crosses the blood-brain barrier and placental barrier.
+Metabolism
+Sites and pathway of metabolism (e.g. CYP450), extent of first-pass metabolism, biological/pharmacological activity of metabolites, and dose dependent changes in metabolism
+Excretion
+Route(s) of excretion and the percentage via each route, elimination half-life (t½), and clearance
+Special Populations/Conditions
+This section should include pharmacokinetic information that is relevant to special populations (e.g., pediatrics, geriatrics, gender, genetic polymorphism, and race) and certain conditions (e.g., hepatic insufficiency, renal insufficiency).
+Indications and Clinical Use
+This section should contain a point-form listing of the indications, followed by a brief discussion of any relevant clinical information.
+The indications to be described in this section should be approved by DCGI.
+Geriatrics
+For indications approved for adults in general, a statement regarding use in the geriatric population should be included.
+Pediatrics
+For indications approved for adults in general, a statement regarding use in the pediatric population should be included.
+Where applicable, a statement should be included to indicate that the product is intended for use as an adjunct to other forms of treatment of the condition.
+For products requiring administration by a specialized health professional or in a restricted setting, an explanation of the restrictions should be provided.
+The clinical usage to be described in this section should be based on substantial evidence of the product's efficacy and safety, derived from adequately designed and well-controlled clinical studies.
+Contraindications
+This section should describe situations in which the drug should not be used because the risk outweighs any potential therapeutic benefit.
+For hypersensitivity reactions, the statement used should be: Patients who are hypersensitive to this drug or to any ingredient/excipients in the formulation.
+Dosage and Administration
+Dosing Considerations
+This section should briefly list the safety issues to consider when administering a dosage regimen in an individual patient (e.g., renal/hepatic disease, age, concomitant therapy, genetic polymorphism, and titration).
+Where different dosage forms are available, if the dosages are not equivalent the conversion value should be stated.
+Recommended Dose and Dosage Adjustment
+This section should provide detailed and practical information on the recommended dosage.
+The section should include: dosage schedules, the initial dose, the optimal method of titrating dosage, the dosage range, maximum daily dose, maintenance dosage, duration of treatment and drug discontinuation schedule.
+When applicable, dosages should be provided for each indication, route of administration and dosage form.
+Guidance should be given on the dosage adjustments necessary when administering the drug in special populations (e.g., children, elderly) or in the presence of co-morbidities (e.g., renal disease, hepatic disease, genetic polymorphism).
+When an age descriptor is used (e.g., children), the age range should be specified.
+If no dosage adjustments are required a statement to that effect should be included (e.g., No dosage adjustment required in hepatic or renal impairment).
+The time of day for optimal drug effect should be indicated (e.g., evening, morning etc.) where applicable.
+Timing of administration of a dose with respect to food should be indicated.
+Drug Interactions
+Interactions of any of the drugs present in the formulations with other drugs during concomitant administration should be mentioned.
+Serious Warnings and Precautions
+Clinically significant or life-threatening safety hazards when taking the drug should be highlighted in this section.
+Adverse Reactions
+This section should contain information on all types of adverse drug reactions (ADRs)  in a tabulated form including those identified during clinical trials and as a result of post-market surveillance. Information relating to clinical trial ADRs and post-market ADRs should be presented separately.
+The standard for defining frequency terms will be based on the Council for International Organizations of Medical Science (CIOMS) convention. Specifically:
+Very common: ≥1/10 (≥10%);
+Common (frequent): ≥1/100 and <1/10 (≥1% and <10%);
+Uncommon (infrequent): ≥1/1,000 and <1/100 (≥0.1% and <1%);
+Rare: ≥1/10,000 and <1/1,000 (≥0.01% and <0.1%);
+Very rare: <1/10,000 (<0.01%), including isolated reports.
+Summary of Important  Clinical Trials
+The clinical trials section of the CME Slides should contain the pivotal studies in support of the drug's efficacy and safety.
+The preponderance of data presented from clinical trials should be from peer-reviewed publications.
+The information on clinical trials should be presented in a tabular format for ease of retrieval of the information.
+Summary & Key Points
+The key points regarding the medicinal product should be listed and should contain the following:
+Statement on any unique pharmacological/clinical aspect of the medicinal product
+Statement on superior/non-inferior efficacy over existing treatment
+Statement on superior/non-inferior safety profile over existing treatment
+Statement on authentic clinical evidence on proof of concept
+Statement on place in therapy of the concerned disease/disorder
+REVIEW SUMMARY
+
+[TABLE 1]
+ |  | SOP. No.: ZUV_MM_03 / Version No.: 1
+Confidential | Effective Date: | Supersedes: None
+Confidential | Review Date: | Review Date:
+SOP Title: Preparation of CME Slides | SOP Title: Preparation of CME Slides | SOP Title: Preparation of CME Slides
+
+[TABLE 2]
+ | Prepared By | Reviewed  By | Approved By
+Name |  |  | 
+Designation |  |  | 
+Sign & date |  |  | 
+
+[TABLE 3]
+Sr. / No. | Pg. No. | Section/Clause/Para/ line | Date of Amendment | Amendment made | Reasons of Amendment
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 

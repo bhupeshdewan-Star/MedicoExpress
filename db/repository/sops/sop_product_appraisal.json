@@ -1,0 +1,24 @@
+{
+  "code": "SOP-MA-001",
+  "title": "Standard Operating Procedure for Scientific Product Appraisal",
+  "category": "Medical Affairs Operations",
+  "version": "1.0.0",
+  "status": "APPROVED",
+  "effective_date": "2026-01-01",
+  "review_date": "2027-06-01",
+  "explainability": {
+    "purpose": "Standardizes the clinical and commercial evaluation of new pharmaceutical developments.",
+    "inputs": ["clinical_trial_summary", "competitor_profiles"],
+    "outputs": ["appraisal_report", "swot_matrix"],
+    "limitations": "Appraisal is dependent on published research data accuracy.",
+    "governanceControls": "Double-signature peer review is required prior to release.",
+    "traceabilityReferences": ["SOP-MA-001"]
+  },
+  "steps": [
+    { "index": 1, "instruction": "Retrieve primary randomized clinical trial publications from database.", "status": "PENDING" },
+    { "index": 2, "instruction": "Extract efficacy data (PFS, OS) and safety warnings.", "status": "PENDING" },
+    { "index": 3, "instruction": "Compile SWOT matrix and competitor differentiation tables.", "status": "PENDING" },
+    { "index": 4, "instruction": "Route the final appraisal draft to medical director for signature.", "status": "PENDING" }
+  ],
+  "content": "# SOP-MA-001: Standard Scientific Product Appraisal\n## 1. Purpose\nEstablishes procedures for evaluating clinical trials and market positioning.\n## 2. Procedure\n1. Retrieve trials. 2. Extract endpoints. 3. Compile SWOT. 4. Obtain approvals."
+}

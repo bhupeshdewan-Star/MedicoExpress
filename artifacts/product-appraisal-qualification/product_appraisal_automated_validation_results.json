@@ -1,0 +1,46 @@
+[
+  {
+    "file": "PA-Q1_Trelagliptin_Product_Appraisal_R2.docx",
+    "checks": 26,
+    "passed_checks": 26,
+    "critical_failures": 0,
+    "all_failures": 0,
+    "content_control_result": "PASS",
+    "visual_render_result": "UNVERIFIED",
+    "activity_qualification_result": "CONDITIONAL_PASS",
+    "failed_checks": []
+  },
+  {
+    "file": "PA-Q2_Empagliflozin_Product_Appraisal_R2.docx",
+    "checks": 26,
+    "passed_checks": 26,
+    "critical_failures": 0,
+    "all_failures": 0,
+    "content_control_result": "PASS",
+    "visual_render_result": "UNVERIFIED",
+    "activity_qualification_result": "CONDITIONAL_PASS",
+    "failed_checks": []
+  },
+  {
+    "file": "PA-Q3_Fevipiprant_Product_Appraisal_R2.docx",
+    "checks": 26,
+    "passed_checks": 26,
+    "critical_failures": 0,
+    "all_failures": 0,
+    "content_control_result": "PASS",
+    "visual_render_result": "UNVERIFIED",
+    "activity_qualification_result": "CONDITIONAL_PASS",
+    "failed_checks": []
+  },
+  {
+    "file": "PA-Q4_Olokizumab_Product_Appraisal_R2.docx",
+    "checks": 26,
+    "passed_checks": 26,
+    "critical_failures": 0,
+    "all_failures": 0,
+    "content_control_result": "PASS",
+    "visual_render_result": "UNVERIFIED",
+    "activity_qualification_result": "CONDITIONAL_PASS",
+    "failed_checks": []
+  }
+]

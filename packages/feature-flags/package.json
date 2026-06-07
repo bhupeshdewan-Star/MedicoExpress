@@ -1,0 +1,8 @@
+{
+  "name": "feature-flags",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Tenant-Aware Feature Flags Control Engine",
+  "private": true,
+  "main": "index.js",
+  "type": "module"
+}

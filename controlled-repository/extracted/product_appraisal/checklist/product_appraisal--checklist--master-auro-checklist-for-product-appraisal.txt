@@ -1,0 +1,315 @@
+MASTER CHECKLIST FOR PRODUCT APPRAISAL (EXHAUSTIVE VERSION)
+(Aligned to Expanded SOP with 23 Major Sections & 250+ audit points)
+SECTION 1 — TITLE PAGE
+SECTION 2 — TABLE OF CONTENTS
+SECTION 3 — SUMMARY PRODUCT APPRAISAL
+SECTION 4 — INTRODUCTION / BACKGROUND
+SECTION 5 — INDIAN EPIDEMIOLOGY & UNMET NEED DEEP DIVE
+SECTION 6 — SCIENTIFIC INFORMATION
+6A. Pharmaceutical Information
+6B. Clinical Pharmacology
+6C. Pharmacokinetics
+SECTION 7 — INDICATIONS & CLINICAL USE
+SECTION 8 — CONTRAINDICATIONS
+SECTION 9 — DOSAGE & ADMINISTRATION
+SECTION 10 — DRUG INTERACTIONS
+SECTION 11 — WARNINGS & PRECAUTIONS
+SECTION 12 — ADVERSE REACTIONS
+SECTION 13 — LANDMARK CLINICAL TRIALS
+SECTION 14 — COMPETITIVE LANDSCAPE & DIFFERENTIATION
+SECTION 15 — HEALTH ECONOMICS & COST-EFFECTIVENESS
+SECTION 16 — DIAGNOSTIC & STEWARDSHIP STRATEGY
+SECTION 17 — RISK MANAGEMENT & PHARMACOVIGILANCE PLAN
+SECTION 18 — MEDICAL EDUCATION & KOL ENGAGEMENT
+SECTION 19 — REGULATORY FEASIBILITY & APPROVAL PATHWAY
+SECTION 20 — MANUFACTURING, CMC & SUPPLY CHAIN
+SECTION 21 — MARKET ACCESS & PRICING STRATEGY
+SECTION 22 — COMMERCIAL FORECAST & SCENARIO PLANNING
+SECTION 23 — GO/NO-GO DECISION FRAMEWORK
+SECTION 24 — STANDARD GUIDELINES SUPPORTING NEW DRUG
+SECTION 25 — INTERNATIONAL APPROVALS
+SECTION 26 — PATENT INFORMATION
+SECTION 27 — SWOT ANALYSIS
+SECTION 28 — SUMMARY & KEY POINTS
+SECTION 29 — REFERENCES
+
+[TABLE 1]
+Parameter | Yes | No | NA
+Document title “Product Appraisal” present |  |  | 
+Proper/common name of drug product |  |  | 
+Strength(s) and route(s) of administration |  |  | 
+Dosage form |  |  | 
+Therapeutic/pharmacological classification |  |  | 
+Company name |  |  | 
+Company address |  |  | 
+Date of preparation |  |  | 
+Date of initial approval |  |  | 
+Date of revision |  |  | 
+
+[TABLE 2]
+Parameter | Yes | No | NA
+Table of contents included |  |  | 
+Page numbers accurate |  |  | 
+
+[TABLE 3]
+Parameter | Yes | No | NA
+Brief but comprehensive synopsis |  |  | 
+Key clinical, regulatory, commercial insights |  |  | 
+Explicit Go/No-Go recommendation |  |  | 
+Proposed place in therapy |  |  | 
+
+[TABLE 4]
+Parameter | Yes | No | NA
+Clear problem statement |  |  | 
+Overview of factors leading to problem |  |  | 
+Epidemiological significance |  |  | 
+Basic scientific concepts |  |  | 
+Rationale for product launch |  |  | 
+Existing therapy gaps |  |  | 
+How new drug addresses gaps |  |  | 
+Unique advantages over SOC |  |  | 
+
+[TABLE 5]
+Parameter | Yes | No | NA
+National prevalence/incidence |  |  | 
+State-level epidemiology |  |  | 
+DALYs, mortality, hospitalization burden |  |  | 
+Patient journey mapping |  |  | 
+Access gaps in India |  |  | 
+Unmet needs in real-world practice |  |  | 
+Gap between guidelines & practice |  |  | 
+Burden on caregivers & system |  |  | 
+
+[TABLE 6]
+Parameter | Yes | No | NA
+Proper/common name |  |  | 
+Chemical name |  |  | 
+Molecular formula & mass |  |  | 
+Structural formula |  |  | 
+Physicochemical properties |  |  | 
+
+[TABLE 7]
+Parameter | Yes | No | NA
+Mechanism of action |  |  | 
+Pharmacodynamics |  |  | 
+Microbiology (if applicable) |  |  | 
+Susceptibility testing |  |  | 
+Reference pathogens |  |  | 
+Resistance & cross-resistance |  |  | 
+
+[TABLE 8]
+Parameter | Yes | No | NA
+Absorption |  |  | 
+AUC |  |  | 
+Tmax |  |  | 
+Cmax |  |  | 
+Onset of action |  |  | 
+Food effect |  |  | 
+Distribution |  |  | 
+Protein binding |  |  | 
+Volume of distribution |  |  | 
+BBB/placental crossing |  |  | 
+Metabolism pathways |  |  | 
+First-pass metabolism |  |  | 
+Active metabolites |  |  | 
+Dose-dependent metabolism |  |  | 
+Excretion routes |  |  | 
+% excretion by route |  |  | 
+Half-life |  |  | 
+Special populations PK |  |  | 
+PK in hepatic/renal impairment |  |  | 
+
+[TABLE 9]
+Parameter | Yes | No | NA
+Point-form indications |  |  | 
+DCGI/USFDA/EU approvals |  |  | 
+Geriatric use |  |  | 
+Pediatric use |  |  | 
+Adjunct therapy requirement |  |  | 
+Specialized administration requirement |  |  | 
+Indications supported by substantial evidence |  |  | 
+
+[TABLE 10]
+Parameter | Yes | No | NA
+Situations where drug must not be used |  |  | 
+Hypersensitivity statements |  |  | 
+
+[TABLE 11]
+Parameter | Yes | No | NA
+Recommended dose |  |  | 
+Route & dosage form |  |  | 
+Titration method |  |  | 
+Maintenance dose |  |  | 
+Duration of treatment |  |  | 
+Discontinuation schedule |  |  | 
+Dose adjustments in special populations |  |  | 
+Statement if no adjustments required |  |  | 
+Time of day for optimal effect |  |  | 
+Food-timing instructions |  |  | 
+
+[TABLE 12]
+Parameter | Yes | No | NA
+Interaction profile |  |  | 
+CYP interactions |  |  | 
+Drug-food interactions |  |  | 
+
+[TABLE 13]
+Parameter | Yes | No | NA
+Serious warnings |  |  | 
+Precautionary statements |  |  | 
+
+[TABLE 14]
+Parameter | Yes | No | NA
+ADRs from trials |  |  | 
+ADRs from post-marketing |  |  | 
+CIOMS frequency classification |  |  | 
+
+[TABLE 15]
+Parameter | Yes | No | NA
+Pivotal efficacy studies |  |  | 
+Pivotal safety studies |  |  | 
+Comparative trials |  |  | 
+Bioavailability studies |  |  | 
+Tabular presentation |  |  | 
+Limitations of evidence |  |  | 
+
+[TABLE 16]
+Parameter | Yes | No | NA
+Competitor list (India + global) |  |  | 
+Class-wise comparison |  |  | 
+Efficacy comparison |  |  | 
+Safety comparison |  |  | 
+Differentiation matrix |  |  | 
+Pricing comparison |  |  | 
+Market share trends |  |  | 
+Pipeline threats |  |  | 
+Barriers to entry |  |  | 
+
+[TABLE 17]
+Parameter | Yes | No | NA
+Cost of therapy vs SOC |  |  | 
+Budget impact analysis |  |  | 
+Cost per QALY / cost per responder |  |  | 
+Hospitalization cost reduction |  |  | 
+ICU/ward stay impact |  |  | 
+CEA/CUA/BIA models |  |  | 
+Affordability index |  |  | 
+
+[TABLE 18]
+Parameter | Yes | No | NA
+Required diagnostics |  |  | 
+Availability in India |  |  | 
+Stewardship alignment |  |  | 
+Diagnostic-treatment algorithm |  |  | 
+Companion diagnostic feasibility |  |  | 
+Resistance impact |  |  | 
+
+[TABLE 19]
+Parameter | Yes | No | NA
+Identified risks |  |  | 
+Potential risks |  |  | 
+Missing information |  |  | 
+RMP alignment (EU/US/India) |  |  | 
+PV system requirements |  |  | 
+PMS plan |  |  | 
+REMS-like requirements |  |  | 
+
+[TABLE 20]
+Parameter | Yes | No | NA
+KOL mapping |  |  | 
+Scientific narrative |  |  | 
+Advisory board plan |  |  | 
+CME/RTM strategy |  |  | 
+Publication plan |  |  | 
+Digital medical education |  |  | 
+HCP segmentation |  |  | 
+
+[TABLE 21]
+Parameter | Yes | No | NA
+DCGI pathway |  |  | 
+Required studies |  |  | 
+Approval timelines |  |  | 
+Regulatory risks |  |  | 
+CDSCO precedent approvals |  |  | 
+Labeling expectations |  |  | 
+
+[TABLE 22]
+Parameter | Yes | No | NA
+API source & security |  |  | 
+CMC compliance |  |  | 
+Stability data |  |  | 
+Scalability |  |  | 
+Cost of goods |  |  | 
+Supply chain risks |  |  | 
+Cold chain requirements |  |  | 
+
+[TABLE 23]
+Parameter | Yes | No | NA
+Pricing corridor |  |  | 
+Reimbursement landscape |  |  | 
+Tender potential |  |  | 
+Hospital formulary acceptance |  |  | 
+Patient affordability programs |  |  | 
+
+[TABLE 24]
+Parameter | Yes | No | NA
+3-scenario forecast |  |  | 
+Key assumptions |  |  | 
+Sensitivity analysis |  |  | 
+Break-even analysis |  |  | 
+ROI estimation |  |  | 
+Launch investment requirement |  |  | 
+
+[TABLE 25]
+Parameter | Yes | No | NA
+Clinical viability score |  |  | 
+Regulatory feasibility score |  |  | 
+Competitive advantage score |  |  | 
+Economic viability score |  |  | 
+Operational readiness score |  |  | 
+Risk score |  |  | 
+Final weighted recommendation |  |  | 
+
+[TABLE 26]
+Parameter | Yes | No | NA
+Indian guidelines |  |  | 
+International guidelines |  |  | 
+Alignment with SOC |  |  | 
+
+[TABLE 27]
+Parameter | Yes | No | NA
+USFDA |  |  | 
+EMA |  |  | 
+MHRA |  |  | 
+PMDA |  |  | 
+TGA |  |  | 
+
+[TABLE 28]
+Parameter | Yes | No | NA
+Composition of matter patent |  |  | 
+Process patents |  |  | 
+Formulation patents |  |  | 
+Patent expiry |  |  | 
+FTO analysis |  |  | 
+
+[TABLE 29]
+Parameter | Yes | No | NA
+Strengths |  |  | 
+Weaknesses |  |  | 
+Opportunities |  |  | 
+Threats |  |  | 
+
+[TABLE 30]
+Parameter | Yes | No | NA
+Unique pharmacological aspects |  |  | 
+Superior/non-inferior efficacy |  |  | 
+Superior/non-inferior safety |  |  | 
+Authentic clinical evidence |  |  | 
+Place in therapy |  |  | 
+Unique selling points |  |  | 
+
+[TABLE 31]
+Parameter | Yes | No | NA
+Vancouver style followed |  |  | 
+References numbered |  |  | 
+All cited studies included |  |  | 

@@ -1,0 +1,30 @@
+{
+  "traceId": "fdd9130a7d3caa05d9deec8c57cefd02",
+  "spanCount": 3,
+  "spans": [
+    {
+      "spanId": "090e97bfe46ed58c",
+      "parentSpanId": null,
+      "serviceName": "api-core",
+      "operationName": "POST /api/v1/epro/sync",
+      "timestamp": "2026-06-04T01:33:51.060Z",
+      "durationMs": 55
+    },
+    {
+      "spanId": "aa401d523e499e89",
+      "parentSpanId": "090e97bfe46ed58c",
+      "serviceName": "epro-sync-service",
+      "operationName": "Process Ingest Payload",
+      "timestamp": "2026-06-04T01:33:51.060Z",
+      "durationMs": 32
+    },
+    {
+      "spanId": "c3f3dd373d2a4be3",
+      "parentSpanId": "aa401d523e499e89",
+      "serviceName": "wearables-gateway",
+      "operationName": "Validate Device Signatures",
+      "timestamp": "2026-06-04T01:33:51.060Z",
+      "durationMs": 18
+    }
+  ]
+}

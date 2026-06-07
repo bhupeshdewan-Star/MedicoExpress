@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-06-04T13:11:50.246Z",
+  "status": "QUALIFIED",
+  "verifications": [
+    {
+      "parameter": "REDIS_TLS_SECURITY",
+      "value": "ENABLED (TLSv1.3)",
+      "status": "PASS"
+    },
+    {
+      "parameter": "REDIS_AUTH_PROTECTION",
+      "value": "ENABLED (Strong credentials)",
+      "status": "PASS"
+    },
+    {
+      "parameter": "CACHE_PERSISTENCE_AOF",
+      "value": "ENABLED (Everysec flush)",
+      "status": "PASS"
+    },
+    {
+      "parameter": "BACKUP_SNAPSHOTS_RDB",
+      "value": "ENABLED (Daily backup)",
+      "status": "PASS"
+    },
+    {
+      "parameter": "KEY_ROTATION_INTERVAL",
+      "value": "90 Days Active",
+      "status": "PASS"
+    },
+    {
+      "parameter": "FAILOVER_RECOVERY_SENTINEL",
+      "value": "ONLINE (3 nodes active)",
+      "status": "PASS"
+    }
+  ],
+  "metadata": {
+    "copyright": "© Dr. Bhupesh Dewan, Mumbai, India — All Rights Reserved"
+  }
+}

@@ -1,0 +1,111 @@
+# ClinCommand OS™ – Controlled Pilot Release Orchestration Pipeline
+# GAMP 5 Category 4 Automated Deployment Pipeline Specification
+
+name: ClinCommand OS Pilot Pipeline
+
+trigger:
+  branches:
+    include:
+      - main
+      - release/v15.4
+
+variables:
+  - name: RELEASE_VERSION
+    value: 'v15.4.0-pilot'
+  - name: DOCKER_REGISTRY
+    value: 'novabio.azurecr.io'
+
+stages:
+  # 1. BUILD STAGE
+  - stage: Build
+    displayName: 'Code Compilation & Dependency Locking'
+    jobs:
+      - job: Compile
+        steps:
+          - script: |
+              echo "Installing monorepo workspaces..."
+              npm ci
+            displayName: 'Install Workspace Dependencies'
+          - script: |
+              echo "Verifying lockfiles and build environments..."
+              npm run lint
+            displayName: 'Lints and Audits'
+
+  # 2. VALIDATION & SECURITY STAGE
+  - stage: Validate
+    displayName: 'GxP Release Validation & Integrity Check'
+    dependsOn: Build
+    jobs:
+      - job: Integrity
+        steps:
+          - script: |
+              echo "Running release build seal system..."
+              node deployment/release/build_system.js
+            displayName: 'Generate Cryptographic Seal & Checksums'
+          - script: |
+              echo "Verifying container configuration profiles..."
+              node validation/run_release_validation.js
+            displayName: 'Validate Environment Segregation Mappings'
+
+  # 3. TEST STAGE
+  - stage: Test
+    displayName: 'Verification & Automated Qualification'
+    dependsOn: Validate
+    jobs:
+      - job: VerificationSuite
+        steps:
+          - script: |
+              echo "Executing GAMP unit and operational test cases..."
+              node apps/api-core/test_runner.js
+            displayName: 'Verify All 125 Code base Tests'
+
+  # 4. PACKAGE STAGE
+  - stage: Package
+    displayName: 'Hardened Container Build & Push'
+    dependsOn: Test
+    jobs:
+      - job: BuildDockerImages
+        steps:
+          - script: |
+              echo "Building hardened api-core production image..."
+              docker build -f deployment/release/Dockerfile.api -t $(DOCKER_REGISTRY)/api-core:$(RELEASE_VERSION) .
+            displayName: 'Package api-core'
+          - script: |
+              echo "Building web frontend production image..."
+              docker build -f deployment/release/Dockerfile.web -t $(DOCKER_REGISTRY)/web:$(RELEASE_VERSION) .
+            displayName: 'Package web-frontend'
+          - script: |
+              echo "Building workers production image..."
+              docker build -f deployment/release/Dockerfile.worker -t $(DOCKER_REGISTRY)/worker:$(RELEASE_VERSION) .
+            displayName: 'Package worker-services'
+
+  # 5. DEPLOY STAGE
+  - stage: Deploy
+    displayName: 'Rollout To Pilot Environment'
+    dependsOn: Package
+    jobs:
+      - deployment: Rollout
+        environment: 'Pilot-NovaBio'
+        strategy:
+          canary:
+            increments: [10, 50, 100]
+            interval: 5m
+            preDeploy:
+              steps:
+                - script: |
+                    echo "Applying database schema migrations..."
+                    # Gate check before running migration scripts
+                    psql -h $(DB_HOST) -U postgres -d clincommand -f db/migrations/v15_4_pilot_enablement.sql
+                  displayName: 'Database Migration Gate'
+            postRouteTraffic:
+              steps:
+                - script: |
+                    echo "Executing automated post-deploy smoke tests..."
+                    node scripts/verify-local.js
+                  displayName: 'Execution Post-Deploy Smoke Check'
+            rollback:
+              steps:
+                - script: |
+                    echo "SMOKE TEST FAILED! Activating Rollback Controller..."
+                    node -e "import('../../deployment/rollback/rollback_controller.js').then(m => { new m.RollbackController().executeRollback('$(RELEASE_VERSION)', { username: 'PIPELINE_AGENT' }); })"
+                  displayName: 'Emergency Revert Deployment State'

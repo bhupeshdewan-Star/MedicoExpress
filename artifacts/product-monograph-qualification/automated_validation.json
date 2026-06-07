@@ -1,0 +1,18 @@
+[
+  {
+    "file": "PM-Q1_Trelagliptin_Product_Monograph.docx",
+    "checks": 25,
+    "passed": 25,
+    "failures": [],
+    "result": "CONDITIONAL_PASS",
+    "visualQA": "UNVERIFIED"
+  },
+  {
+    "file": "PM-Q2_Seratrodast_Product_Monograph.docx",
+    "checks": 25,
+    "passed": 25,
+    "failures": [],
+    "result": "CONDITIONAL_PASS",
+    "visualQA": "UNVERIFIED"
+  }
+]

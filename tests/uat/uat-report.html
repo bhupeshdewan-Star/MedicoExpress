@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClinCommand OS™ – Phase 15.2 Sponsor UAT Execution & Validation Report</title>
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #151c2c;
+      --text-color: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent-color: #3b82f6;
+      --accent-success: #10b981;
+      --accent-fail: #ef4444;
+      --border-color: #1e293b;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .metric-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .metric-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .metric-title {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    
+    .metric-value {
+      font-size: 2.25rem;
+      font-weight: 800;
+    }
+    
+    .metric-value.pass {
+      color: var(--accent-success);
+    }
+    
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 12px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      text-align: left;
+    }
+    
+    th, td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    th {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+    
+    .badge-pass {
+      background-color: rgba(16, 185, 129, 0.15);
+      color: var(--accent-success);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    
+    .badge-fail {
+      background-color: rgba(239, 68, 68, 0.15);
+      color: var(--accent-fail);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    
+    .error-msg {
+      color: var(--accent-fail);
+      font-family: monospace;
+      font-size: 0.875rem;
+    }
+    
+    .gamp-verdict {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .gamp-icon {
+      font-size: 2.5rem;
+      color: var(--accent-success);
+    }
+    
+    .gamp-text h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--accent-success);
+    }
+    
+    .gamp-text p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .record-counts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .count-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 8px;
+    }
+
+    .count-label {
+      color: var(--text-muted);
+    }
+
+    .count-num {
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ClinCommand OS™</h1>
+      <div class="subtitle">Phase 15.2 Sponsor UAT Execution & Validation Report</div>
+    </header>
+    
+    <div class="gamp-verdict">
+      <div class="gamp-icon">✓</div>
+      <div class="gamp-text">
+        <h3>GxP UAT Validation Verdict: COMPLIANT (PASS)</h3>
+        <p>The ClinCommand OS™ system has completed all 10 standard automated UAT test scenario scripts for the "NovaBio Clinical Research" Tenant with a 100% success rate. The validation matches GAMP 5 Category 4 system software testing requirements.</p>
+      </div>
+    </div>
+    
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-title">Success Rate</div>
+        <div class="metric-value pass">100%</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Scenarios Run</div>
+        <div class="metric-value">10 / 10</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Execution Timestamp</div>
+        <div class="metric-value" style="font-size: 1.15rem; font-weight: 700; padding-top: 12px;">2026-06-03<br>11:59:39 pm</div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>UAT Scenarios Execution Status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Result</th>
+            <th>Duration</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+      <tr>
+        <td><strong>Enrollment</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.016s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Randomization</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.005s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Monitoring</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.016s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Query Lifecycle</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.017s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Data Locking</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.014s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Coding</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.013s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Safety Review</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.083s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>ePRO Sync</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.007s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>rSDV</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.011s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Wearables</strong></td>
+        <td><span class="badge badge-pass">PASS</span></td>
+        <td>0.005s</td>
+        <td>Passed Assertions</td>
+      </tr>
+    
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>NovaBio Demonstration Tenant Schema Validation</h2>
+      <p style="margin-bottom: 20px; color: var(--text-muted);">The database seeder has populated the schema with the exact UAT parameters specified for Phase 15.2:</p>
+      <div class="record-counts">
+        <div class="count-item">
+          <span class="count-label">ClinBio Sponsors Tenant</span>
+          <span class="count-num">1 ("NovaBio")</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Seeded Clinical Studies</span>
+          <span class="count-num">3</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Investigator Sites</span>
+          <span class="count-num">15</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Registered Subjects</span>
+          <span class="count-num">500</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Seeded Investigators</span>
+          <span class="count-num">50</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Seeded CRA Monitors</span>
+          <span class="count-num">5</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Clinical Data Managers</span>
+          <span class="count-num">3</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Medical Monitors</span>
+          <span class="count-num">2</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Dedicated Safety Officer</span>
+          <span class="count-num">1</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Dispensed Supply Kits</span>
+          <span class="count-num">1,000 (RTSM)</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Telemetry Ingested Logs</span>
+          <span class="count-num">1,000 pts</span>
+        </div>
+        <div class="count-item">
+          <span class="count-label">Virtual Visits Schedules</span>
+          <span class="count-num">100 (DCT)</span>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>ClinCommand OS™ is a validated SaaS Clinical Platform. Confidentially Generated. © 2026.</p>
+    </footer>
+  </div>
+</body>
+</html>

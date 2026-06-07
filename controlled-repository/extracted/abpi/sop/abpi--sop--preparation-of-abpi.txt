@@ -1,0 +1,66 @@
+PURPOSE
+This procedure describes the process for designing, revising and distributing Abridged Prescribing Information (ABPI) for a medicinal product and intended to be circulated among the doctors/physicians.
+SCOPE
+This SOP is applicable to all the designated personnel responsible for designing of the ABPI and for ensuring the timely update of relevant scientific data.
+RESPONSIBILITY
+The Author of the ABPI is responsible for preparing the initial draft of the ABPI and discuss it with the Medical director for review, comments and final approval before dispatching it to the Product Management Team.
+The author is responsible for timely revision and updating of the ABPI.
+POLICY
+The first copy of all SOPs will be maintained in a soft copy form with the original signatures in the custody of the Quality Assurance Department. Second copy will be made available in the controlled form for reference by employees. The forms, templates and checklists will have restricted access to employees.
+GENERAL PRINCIPLES
+What is an ABPI?
+An ABPI is a document provided along with the promotional material of a medicinal product to provide concise and abridged information about that particular product.
+General instructions
+An ABPI should be prepared with the following guiding principles as a basis for the information:
+Avoid duplication of information.
+Key information should be easy to locate.
+The information included in the ABPI must be supported by substantial evidence.
+Revisions
+Revisions should be initiated by the sponsor/company whenever significant updating of the ABPI is required in order to incorporate additions or other changes related to safety (particularly with respect to precautions, adverse reactions, and mode of administration) that may be necessary as a result of newly available information.
+The ABPI should also be revised whenever substantial information is available to support significant new indications or when other changes or deletions in the indications and conditions of use are required as a result of additional available information.
+Distribution
+A copy of the ABPI should be provided with every promotional material to act as a source of relevant and concise information for health professionals.
+Procedures
+Generic name
+Chemical name of the product.
+Brand name
+Brand name (Proprietor name)
+Indications
+All the conditions for which the formulation is indicated should be mentioned.
+Pharmaceutical form, Dosage & Method of Administration
+Products in the form in which they are marketed for use
+The size or frequency of a dose of a medicine or drug
+A route of administration is the way by which a drug, fluid, or other substance is taken into the body. Routes of administration are generally classified by the location at which the substance is applied. Common examples include oral and intravenous administration.
+Contraindications
+The different conditions during which the drug should not be used is to be specified.
+Warnings and Precautions, including Special Population
+Identify and describe a discrete set of adverse reactions and other potential safety hazards that are serious or are otherwise clinically significant because they have implications for prescribing decisions or for patient management.
+Safety of the drug, especially during pregnancy and lactation, in children or in elderly and also in case of patients with impaired renal or hepatic functions should be mentioned.
+Adverse reactions
+Side effects of all the ingredients are to be mentioned individually in brief.
+Drug interactions
+Any known or predicted drug interactions with serious or otherwise clinically significant outcomes.
+Overdose
+A drug overdose is the ingestion or application of a drug or other substance in quantities much greater than are recommended and the methods to treat the condition.
+Storage condition
+Official storage conditions of pharmaceutical product as per defined by QA/ QC
+REVIEW SUMMARY
+
+[TABLE 1]
+ |  | SOP. No.: COMPANY_MM_06 / Version No.: 1
+Confidential | Effective Date: | Supersedes: None
+Confidential | Review Date: | Review Date:
+SOP Title: Preparation of ABPI | SOP Title: Preparation of ABPI | SOP Title: Preparation of ABPI
+
+[TABLE 2]
+ | Prepared By | Reviewed  By | Approved By
+Name |  |  | 
+Designation |  |  | 
+Sign & date |  |  | 
+
+[TABLE 3]
+Sr. / No. | Pg. No. | Section/Clause/Para/ line | Date of Amendment | Amendment made | Reasons of Amendment
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 

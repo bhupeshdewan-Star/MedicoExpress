@@ -1,0 +1,11 @@
+{
+  "name": "dct-service",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Go-based Telemedicine & DCT Visits Service",
+  "private": true,
+  "main": "main.go",
+  "scripts": {
+    "build": "go build -o bin/dct-service main.go",
+    "test": "go test ./..."
+  }
+}

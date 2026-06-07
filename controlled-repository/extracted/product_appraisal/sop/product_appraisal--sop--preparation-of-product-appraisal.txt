@@ -1,0 +1,74 @@
+Standard Operating Procedure (SOP) – Preparation of Product Appraisal
+1. PURPOSE
+Define the standardized process for preparing a comprehensive, evidence-based, decision-oriented Product Appraisal for medicinal products to support Go/No-Go decisions.
+2. SCOPE
+Applicable to all personnel involved in creation, review, approval, and updating of Product Appraisals.
+3. RESPONSIBILITY
+- Author drafts and updates appraisal.
+- Medical Director reviews and approves.
+- PMT uses for decision-making.
+- QA maintains controlled copies.
+- Cross-functional teams provide updated data.
+4. POLICY
+All appraisals must be evidence-based, referenced, updated, and aligned with regulatory and medico-marketing standards.
+5. GENERAL PRINCIPLES
+Appraisal must determine whether the product offers clinically meaningful, economically viable, and strategically differentiated value.
+6. PROCEDURE
+6.1 Title Page
+Include document title, drug name, strength, route, classification, company details, dates.
+6.2 Table of Contents
+Include page numbers.
+6.3 Summary Product Appraisal
+Provide executive summary, key insights, Go/No-Go recommendation, place in therapy.
+6.4 Introduction / Background
+Describe problem statement, epidemiology, disease burden, management gaps, rationale.
+6.5 Indian Epidemiology & Unmet Need Deep Dive
+Include national/state epidemiology, DALYs, patient journey, access gaps, unmet needs.
+6.6 Scientific Information
+Pharmaceutical info, clinical pharmacology, PK/PD, indications, contraindications, dosage, interactions, warnings, ADRs.
+6.7 Landmark Clinical Trials
+Include pivotal efficacy/safety trials, comparative studies, BA/BE studies.
+6.8 Competitive Landscape & Differentiation
+Competitor analysis, differentiation matrix, pricing, market share, pipeline threats.
+6.9 Health Economics & Cost-Effectiveness
+CEA, CUA, BIA, affordability index, hospitalization cost impact.
+6.10 Diagnostic & Stewardship Integration Strategy
+Diagnostics required, stewardship alignment, algorithms, resistance impact.
+6.11 Risk Management & Pharmacovigilance Plan
+Identified/potential risks, missing info, RMP, PV system, PMS plan.
+6.12 Medical Education & KOL Engagement Plan
+KOL mapping, scientific narrative, advisory boards, CME, publications.
+6.13 Regulatory Feasibility & Approval Pathway
+DCGI pathway, required studies, timelines, risks, precedent approvals.
+6.14 Manufacturing, CMC & Supply Chain Readiness
+API source, CMC compliance, stability, scalability, COGS, supply chain risks.
+6.15 Market Access & Pricing Strategy
+Pricing corridor, reimbursement, tenders, formulary acceptance, PAPs.
+6.16 Commercial Forecast & Scenario Planning
+3-scenario forecast, assumptions, sensitivity, break-even, ROI.
+6.17 Go/No-Go Decision Framework
+Weighted scoring across clinical, regulatory, competitive, economic, operational, and risk domains.
+6.18 Standard Guidelines Supporting New Drug
+Include Indian and international guidelines.
+6.19 International Approvals
+USFDA, EMA, MHRA, PMDA, TGA status.
+6.20 Patent Information
+COM patents, process patents, expiry, FTO analysis.
+6.21 SWOT Analysis
+Strengths, weaknesses, opportunities, threats.
+6.22 Summary & Key Points
+Unique pharmacology, efficacy, safety, clinical evidence, place in therapy, USPs.
+6.23 References
+Vancouver style, numbered citations.
+
+[TABLE 1]
+ |  | SOP. No.: Auro_MM_07 / Version No.: 1
+Confidential | Effective Date: | Supersedes: None
+Confidential | Review Date: | Review Date:
+SOP Title: Preparation of Product Appraisal | SOP Title: Preparation of Product Appraisal | SOP Title: Preparation of Product Appraisal
+
+[TABLE 2]
+ | Prepared By | Reviewed  By | Approved By
+Name |  |  | 
+Designation |  |  | 
+Sign & date |  |  | 

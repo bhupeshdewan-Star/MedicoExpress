@@ -1,0 +1,95 @@
+{
+  "family": "clincommand-task-definition",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "1024",
+  "memory": "2048",
+  "executionRoleArn": "arn:aws:iam::123456789012:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::123456789012:role/clincommandTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "clincommand-app-container",
+      "image": "123456789012.dkr.ecr.us-east-1.amazonaws.com/clincommand-app:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 5000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "PORT",
+          "value": "5000"
+        },
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "name": "DB_HOST",
+          "value": "clincommand-db.us-east-1.rds.amazonaws.com"
+        },
+        {
+          "name": "DB_PORT",
+          "value": "5432"
+        },
+        {
+          "name": "DB_NAME",
+          "value": "clincommand"
+        },
+        {
+          "name": "REDIS_HOST",
+          "value": "clincommand-cache.us-east-1.cache.amazonaws.com"
+        },
+        {
+          "name": "REDIS_PORT",
+          "value": "6379"
+        },
+        {
+          "name": "RATE_LIMIT_MAX",
+          "value": "120"
+        },
+        {
+          "name": "RATE_LIMIT_WINDOW",
+          "value": "60"
+        }
+      ],
+      "secrets": [
+        {
+          "name": "DB_USER",
+          "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:clincommand/db-credentials:username::"
+        },
+        {
+          "name": "DB_PASSWORD",
+          "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:clincommand/db-credentials:password::"
+        },
+        {
+          "name": "JWT_SECRET",
+          "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:clincommand/app-secrets:jwt-secret::"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/clincommand-app",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "app-service"
+        }
+      },
+      "healthCheck": {
+        "command": [
+          "CMD-SHELL",
+          "curl -f http://localhost:5000/api/v1/compliance/validate || exit 1"
+        ],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 60
+      }
+    }
+  ]
+}

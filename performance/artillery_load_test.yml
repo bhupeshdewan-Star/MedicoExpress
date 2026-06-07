@@ -1,0 +1,25 @@
+config:
+  target: "http://localhost:5000"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 15
+      name: "Ramp up load"
+    - duration: 120
+      arrivalRate: 15
+      name: "Sustained load"
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Authorization: "Bearer MOCK_TEST_TOKEN"
+  plugins:
+    metrics-by-endpoint: {}
+
+scenarios:
+  - name: "Intake validation flow test"
+    flow:
+      - post:
+          url: "/api/v1/compliance/validate"
+          json: {}
+      - get:
+          url: "/api/v1/intake/forms"

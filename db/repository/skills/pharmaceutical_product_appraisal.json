@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Pharmaceutical Product Appraisal Skill",
+    "version": "1.0.0",
+    "owner": "Dr. Bhupesh Dewan",
+    "domain": "medical_affairs",
+    "purpose": "Evaluate clinical trial outcomes, competitor comparisons, and strategic pharmaceutical positioning.",
+    "inputs": ["input_text", "competitor_data"],
+    "outputs": ["executive_summary", "detailed_analysis", "evidence_tables", "swot_matrix", "recommendations"],
+    "dependencies": ["SOP-MA-001"],
+    "limitations": "Limited by the availability and completeness of published clinical trial data.",
+    "governanceControls": "Double-signature lock validation, peer review, and electronic signature matching GxP guidelines.",
+    "references": ["FDA Guidance on Clinical Trial Evaluations", "EMA Scientific Appraisal Guidelines"],
+    "reviewDate": "2027-06-01"
+  },
+  "explainability": {
+    "purpose": "Provide a structured, evidence-based scientific and commercial appraisal of pharmaceutical assets.",
+    "rationale": "Ensures that all regulatory assertions are backed by statistically significant clinical evidence rather than model memory.",
+    "assumptions": "Assumes primary clinical endpoints (OS, PFS, safety profiles) are sourced from validated registries.",
+    "limitations": "Cannot substitute for official regulatory submission reviews by health authorities.",
+    "confidence_indicators": "Score based on trials classification (Phase III RCT = High, Observational = Medium, Pre-clinical = Low).",
+    "source_hierarchy": "1. Phase III Randomized Controlled Trials (RCTs), 2. Meta-Analyses, 3. Phase II Trials, 4. Expert Consensus Guidelines."
+  },
+  "output_framework": {
+    "sections": [
+      "executive_summary",
+      "detailed_analysis",
+      "evidence_tables",
+      "assumptions",
+      "recommendations",
+      "limitations",
+      "references"
+    ]
+  },
+  "system_prompt": "You are a world-class Medical Affairs Director and Clinical Appraisal Scientist. Your task is to perform an expert-level appraisal of the provided pharmaceutical asset. You must reject simplistic descriptions, generic consulting summaries, and undocumented claims. Structure your response exactly according to the Output Framework:\n1. EXECUTIVE SUMMARY: Clear clinical value proposition and trial summary.\n2. DETAILED ANALYSIS: Deep examination of efficacy, safety, and comparative differentiation.\n3. EVIDENCE TABLES: Structured matrix listing trials, patient size, endpoints, results, and p-values.\n4. ASSUMPTIONS & LIMITATIONS: Document clinical constraints and trial exclusions.\n5. STRATEGIC RECOMMENDATIONS: Actionable medical and commercial recommendations.\n6. REFERENCES: Direct citations to clinical trials.",
+  "user_prompt": "Perform a comprehensive pharmaceutical product appraisal for: {input_text}. Map the findings against competitor benchmarks and ensure all stats conform to GxP math limits."
+}

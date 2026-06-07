@@ -1,0 +1,24 @@
+Check List CME slides
+
+[TABLE 1]
+Sr. | Parameter | YES | NO | NA
+1 | Title Slide |  |  | 
+2 | Overview of the Presentation |  |  | 
+3 | Introduction/Background |  |  | 
+4 | Pathophysiology of the disease/Disorder |  |  | 
+5 | Current Treatment options & Gap in Existing Therapy |  |  | 
+6 | Guidelines and Recommendations for Disease/Disorder Management |  |  | 
+7 | Discussion on the Medicinal Product |  |  | 
+8 | Summary of Important  Clinical Trials |  |  | 
+9 | Summary & Key Points |  |  | 
+10 | Is there a duplication of information? |  |  | 
+11 | Numbering of the slides done |  |  | 
+12 | Contents of the slide should not look crowded and cumbersome |  |  | 
+13 | Title Text of each slide with a text size of 36-40 |  |  | 
+14 | Contents of the slides -Text size from 24-28 |  |  | 
+15 | Reference added in each slide.  Recent references should be preferred over older references. |  |  | 
+16 | Use of suitable animations, clip art, pictures, tables and graphs |  |  | 
+17 | Identifiable photographs of patients should not be used |  |  | 
+18 | Presentation is  free of any commercial bias for or against any product |  |  | 
+19 | CME Slides should also be revised whenever substantial information is available to support significant new indications or when other changes or deletions in the indications and conditions of use are required as a result of additional available information |  |  | 
+20 | Update  CME Slides in order to incorporate additions or other changes related to safety |  |  | 

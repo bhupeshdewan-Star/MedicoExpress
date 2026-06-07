@@ -1,0 +1,23 @@
+{
+  "receiptId": "94efe539-5e7d-46a1-b6cb-7f6b5c09b40c",
+  "executionId": "architecture-cme-slides-package-check",
+  "activity": "cme_slides",
+  "repositoryManifest": "controlled-repository/manifests/owner-supplied-activity-sources.json",
+  "consultedPackages": [
+    {
+      "assetId": "cme_slides--sop--preparation-of-cme-slides",
+      "assetType": "sop",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "30c0d81fcc151f3f8907cbb7e8f81151009fcaef118d4a7ac4670407763e49c1",
+      "extractedSha256": "062ea1718e27688a8523e3723f0b7641b2129060c196dee8c4afbc56b6c31697",
+      "consultedAt": "2026-06-06T06:38:54.266050+00:00"
+    }
+  ],
+  "missingRequiredAssetTypes": [
+    "skill"
+  ],
+  "result": "BLOCKED_MISSING_REQUIRED_PACKAGE",
+  "note": "Owner-supplied source status permits draft planning only. Effective production execution requires explicit approval and effective status.",
+  "createdAt": "2026-06-06T06:38:54.267050+00:00"
+}

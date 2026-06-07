@@ -1,0 +1,30 @@
+{
+  "name": "production",
+  "database": {
+    "host": "production-db-cluster.novabio.internal",
+    "port": 5432,
+    "user": "postgres",
+    "name": "clincommand_production",
+    "ssl": true
+  },
+  "redis": {
+    "host": "production-redis-cluster.novabio.internal",
+    "port": 6379,
+    "tls": true
+  },
+  "kms": {
+    "provider": "AWS",
+    "keyArn": "arn:aws:kms:us-east-1:123456789012:key/prod-key-active"
+  },
+  "sso": {
+    "enabled": true,
+    "providers": ["Okta", "Azure AD", "Google Workspace"]
+  },
+  "featureFlags": {
+    "wearables_telemetry": { "enabled": true, "rollout": 100 },
+    "rsdv_ocr": { "enabled": true, "rollout": 100 },
+    "rbm_ai": { "enabled": true, "rollout": 100 },
+    "dct_virtual_visits": { "enabled": true, "rollout": 100 },
+    "epro_sync": { "enabled": true, "rollout": 100 }
+  }
+}

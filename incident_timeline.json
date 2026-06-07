@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-04T01:33:51.071Z",
+  "historicalEvents": [
+    {
+      "id": "INC-1780486-P2",
+      "priority": "P2",
+      "title": "Minor SLA Drift Warning",
+      "details": "P95 latency spike on ePRO ingestion (245ms > 200ms target). Informational.",
+      "timestamp": "2026-06-04T00:33:51.071Z",
+      "status": "RESOLVED",
+      "actionExecuted": "METRICS_LOGGED_AND_ALERTS_DISPATCHED"
+    },
+    {
+      "id": "INC-1780492-P1",
+      "priority": "P1",
+      "title": "Queue Backlog Saturation",
+      "details": "Wearables telemetry backlog exceeded 150 items. Throttling traffic to 5%.",
+      "timestamp": "2026-06-04T01:13:51.071Z",
+      "status": "RESOLVED",
+      "actionExecuted": "TRAFFIC_THROTTLED_AND_TELEMETRY_DISABLED"
+    },
+    {
+      "id": "INC-1780536831061-P1",
+      "priority": "P1",
+      "title": "System Degradation",
+      "details": "{\"errorRate\":0.06,\"p95LatencyMs\":650,\"queueBacklog\":180,\"rbmFailureRate\":1,\"dbSlowQueriesCount\":2}",
+      "timestamp": "2026-06-04T01:33:51.071Z",
+      "status": "OPEN",
+      "actionExecuted": "TRAFFIC_THROTTLED_AND_TELEMETRY_DISABLED"
+    },
+    {
+      "id": "INC-1780536831062-P0",
+      "priority": "P0",
+      "title": "Critical System Outage",
+      "details": "{\"errorRate\":0.15,\"p95LatencyMs\":1400,\"queueBacklog\":250,\"rbmFailureRate\":10,\"dbSlowQueriesCount\":15}",
+      "timestamp": "2026-06-04T01:33:51.071Z",
+      "status": "OPEN",
+      "actionExecuted": "EMERGENCY_ROLLBACK_AND_GLOBAL_KILL_SWITCH"
+    }
+  ]
+}

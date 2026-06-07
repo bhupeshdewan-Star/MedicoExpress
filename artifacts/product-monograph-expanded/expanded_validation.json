@@ -1,0 +1,26 @@
+[
+  {
+    "file": "PM-EXP-Q1_Trelagliptin_Expanded_HCP_Scientific_Monograph_R2.docx",
+    "word_count": 12173,
+    "paragraphs": 445,
+    "tables": 65,
+    "explicit_page_breaks": 45,
+    "checks": 25,
+    "passed": 25,
+    "failures": [],
+    "result": "CONDITIONAL_PASS",
+    "visual_qa": "PENDING"
+  },
+  {
+    "file": "PM-EXP-Q2_Seratrodast_Expanded_HCP_Scientific_Monograph_R2.docx",
+    "word_count": 12032,
+    "paragraphs": 421,
+    "tables": 55,
+    "explicit_page_breaks": 40,
+    "checks": 25,
+    "passed": 25,
+    "failures": [],
+    "result": "CONDITIONAL_PASS",
+    "visual_qa": "PENDING"
+  }
+]

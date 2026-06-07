@@ -1,0 +1,12 @@
+# .gitignore for ClinCommand OS™
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+*.log
+.system_generated/
+production-certification-package/
+scratch/
+.env
+.env.*
+.DS_Store

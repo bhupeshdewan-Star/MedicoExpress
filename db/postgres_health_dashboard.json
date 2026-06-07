@@ -1,0 +1,21 @@
+{
+  "system": "ClinCommand OS™",
+  "component": "PostgreSQL Connection Pool Monitor",
+  "status": "ONLINE",
+  "metrics": {
+    "activeConnections": 4,
+    "idleConnections": 16,
+    "maxConnections": 20,
+    "poolUtilization": "20.0%",
+    "averageQueryLatencyMs": 14.5,
+    "queryFailuresCount": 0,
+    "sslActive": false,
+    "tenantScopingEnabled": true
+  },
+  "history": [
+    { "timestamp": "25m ago", "avgLatencyMs": 15.2, "errors": 0 },
+    { "timestamp": "15m ago", "avgLatencyMs": 14.8, "errors": 0 },
+    { "timestamp": "5m ago", "avgLatencyMs": 14.5, "errors": 0 }
+  ],
+  "attribution": "© Dr. Bhupesh Dewan, Mumbai, India — All Rights Reserved"
+}

@@ -1,0 +1,30 @@
+name: Security Audit Scanner
+
+on:
+  push:
+    branches: [ main, dev ]
+  schedule:
+    - cron: '0 0 * * 0' # Run weekly on Sundays
+
+jobs:
+  audit-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Scan Package Dependencies for Vulnerabilities
+        run: npm audit --audit-level=high
+
+      - name: Run Trufflehog Secrets Scanner
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ""
+          head: "HEAD"
+          extra_args: "--debug --only-verified"

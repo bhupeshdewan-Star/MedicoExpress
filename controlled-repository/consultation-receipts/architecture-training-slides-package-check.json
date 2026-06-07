@@ -1,0 +1,23 @@
+{
+  "receiptId": "8e99bb54-798a-4aed-8d7a-3a03056060f2",
+  "executionId": "architecture-training-slides-package-check",
+  "activity": "product_training_slides",
+  "repositoryManifest": "controlled-repository/manifests/owner-supplied-activity-sources.json",
+  "consultedPackages": [
+    {
+      "assetId": "product_training_slides--skill--pharmaceutical-product-training-slides-skill",
+      "assetType": "skill",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "76e221f043c7ca97ef2966376d2a95e49329fb2c6c3b6fbb539d533b15e7ea8d",
+      "extractedSha256": "39ce876203193018f0106f65c793754bb143da73fc02f2b25c0c8a0ac4bdeaf2",
+      "consultedAt": "2026-06-06T06:38:54.263060+00:00"
+    }
+  ],
+  "missingRequiredAssetTypes": [
+    "sop"
+  ],
+  "result": "BLOCKED_MISSING_REQUIRED_PACKAGE",
+  "note": "Owner-supplied source status permits draft planning only. Effective production execution requires explicit approval and effective status.",
+  "createdAt": "2026-06-06T06:38:54.263060+00:00"
+}

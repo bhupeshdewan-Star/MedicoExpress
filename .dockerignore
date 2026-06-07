@@ -1,0 +1,10 @@
+# .dockerignore for ClinCommand OS™
+.git
+node_modules
+**/node_modules
+dist
+**/dist
+*.log
+.system_generated
+production-certification-package
+scratch

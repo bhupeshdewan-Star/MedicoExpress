@@ -1,0 +1,33 @@
+# ClinCommand OS™ – Controlled Pilot Service Level Objectives (SLOs)
+# GAMP 5 Category 4 Qualified SLA Monitoring Rules
+
+slo_targets:
+  - id: SLO-API-AVAIL
+    name: API Core Endpoint Availability
+    target: 99.90
+    metric: "sum(rate(http_requests_total{status!~'5..'}[5m])) / sum(rate(http_requests_total[5m]))"
+    description: "API route request availability calculated over a sliding 5-minute window."
+
+  - id: SLO-API-LATENCY
+    name: API Route P95 Response Latency
+    target: 200 # ms
+    metric: "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) * 1000"
+    description: "Response latency of 95% of active requests must be under 200 milliseconds."
+
+  - id: SLO-EPRO-LAG
+    name: ePRO Ingestion Synchronization Lag
+    target: 60 # seconds
+    metric: "avg(epro_sync_delay_seconds)"
+    description: "Time delay between ePRO device submission and target database write confirmation."
+
+  - id: SLO-TELEM-DROP
+    name: Wearables Telemetry Package Drop Rate
+    target: 0.10 # percentage
+    metric: "sum(rate(wearables_ingestion_failures_total[5m])) / sum(rate(wearables_ingestion_attempts_total[5m])) * 100"
+    description: "Allowable rate of packet drops or connection drops in wearables stream."
+
+  - id: SLO-RBM-APPROVE
+    name: RBM Alert E-Signature Approval Rate
+    target: 98.00 # percentage
+    metric: "sum(rate(rbm_approval_success_total[1h])) / sum(rate(rbm_approval_attempts_total[1h])) * 100"
+    description: "Successful e-signature authorizations under dual password compliance requirements."

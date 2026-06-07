@@ -1,0 +1,11 @@
+{
+  "name": "epro-sync-service",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Go-based ePRO Offline-First Synchronization Gateway",
+  "private": true,
+  "main": "main.go",
+  "scripts": {
+    "build": "go build -o bin/epro-sync-service main.go",
+    "test": "go test ./..."
+  }
+}

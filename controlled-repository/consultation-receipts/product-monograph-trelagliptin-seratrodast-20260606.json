@@ -1,0 +1,30 @@
+{
+  "receiptId": "c15a6f72-faf0-4926-97db-21c9d3914659",
+  "executionId": "product-monograph-trelagliptin-seratrodast-20260606",
+  "activity": "product_monograph",
+  "repositoryManifest": "controlled-repository/manifests/owner-supplied-activity-sources.json",
+  "consultedPackages": [
+    {
+      "assetId": "product_monograph--sop--preparation-of-product-monograph",
+      "assetType": "sop",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "687139faa0abe378908f1431c0f8d576e09ba0ee40b32d619071f11fbb66531b",
+      "extractedSha256": "a780bceeb272547e6fbeb426fc5cc9ed5ddc5a3810fb037c9d9020aab8fd6a80",
+      "consultedAt": "2026-06-06T06:44:10.754271+00:00"
+    },
+    {
+      "assetId": "product_monograph--skill--world-class-hcp-product-monograph-skill",
+      "assetType": "skill",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "a1017f7ef5d27a884c38ee40e35fb121a3908528abb8a83b712e2b558282ba15",
+      "extractedSha256": "5fedc1a8e86323286a4923ef782c4a04d41a05a6fdb20aff4a48fb1325ae81d0",
+      "consultedAt": "2026-06-06T06:44:10.756274+00:00"
+    }
+  ],
+  "missingRequiredAssetTypes": [],
+  "result": "READY_FOR_DRAFT_PLANNING",
+  "note": "Owner-supplied source status permits draft planning only. Effective production execution requires explicit approval and effective status.",
+  "createdAt": "2026-06-06T06:44:10.756274+00:00"
+}

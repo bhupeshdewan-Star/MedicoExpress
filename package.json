@@ -1,0 +1,23 @@
+{
+  "name": "clincommand-os-workspace",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Enterprise SaaS Platform Workspace",
+  "private": true,
+  "workspaces": [
+    "apps/api-core",
+    "apps/web",
+    "apps/storage",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm.cmd run build --prefix apps/web",
+    "lint": "npm.cmd run lint --prefix apps/web",
+    "test": "node apps/api-core/test_runner.js",
+    "verify-local": "node scripts/verify-local.js",
+    "local:start": "bash scripts/bootstrap-local.sh"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

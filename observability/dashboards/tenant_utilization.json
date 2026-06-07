@@ -1,0 +1,36 @@
+{
+  "id": 104,
+  "title": "ClinCommand OS™ – SaaS Tenant Utilization",
+  "uid": "tenant_utilization_dashboard",
+  "style": "dark",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Active API Request Rate by Tenant Group",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "sum(rate(http_api_request_duration_ms_count[5m])) by (tenant_id)",
+          "legendFormat": "Tenant ID: {{tenant_id}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Active SaaS Billing Subscriptions Summary",
+      "type": "gauge",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "sum(billing_active_subscriptions) by (plan_tier)",
+          "legendFormat": "Tier: {{plan_tier}}",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 36,
+  "tags": ["saas", "utilization"]
+}

@@ -1,0 +1,24 @@
+{
+  "code": "SOP-REG-001",
+  "title": "Standard Operating Procedure for HCP Product Monograph Development",
+  "category": "Regulatory Support",
+  "version": "1.0.0",
+  "status": "APPROVED",
+  "effective_date": "2026-01-01",
+  "review_date": "2027-06-01",
+  "explainability": {
+    "purpose": "Governs the generation of Summaries of Product Characteristics (SmPCs) and prescribing guidance.",
+    "inputs": ["clinical_trial_summary", "safety_data_points"],
+    "outputs": ["monograph_document", "black_box_disclaimer"],
+    "limitations": "Strictly limited to indications approved by the FDA/EMA.",
+    "governanceControls": "Double-signature lock validation, and compliance audits.",
+    "traceabilityReferences": ["SOP-REG-001"]
+  },
+  "steps": [
+    { "index": 1, "instruction": "Formulate clinical pharmacology section based on pharmacokinetic data.", "status": "PENDING" },
+    { "index": 2, "instruction": "Define approved indications and contraindications.", "status": "PENDING" },
+    { "index": 3, "instruction": "Insert drug-drug interactions and adverse reaction warnings.", "status": "PENDING" },
+    { "index": 4, "instruction": "Obtain regulatory sign-off and electronic signature registration.", "status": "PENDING" }
+  ],
+  "content": "# SOP-REG-001: Product Monograph Writing\n## 1. Purpose\nGoverns development of Summaries of Product Characteristics.\n## 2. Procedure\n1. Write pharmacology. 2. Define indications. 3. Include drug interactions. 4. Register sign-offs."
+}

@@ -1,0 +1,17 @@
+{
+  "method": "t-test",
+  "data": {
+    "group_a": [10.2, 11.4, 9.8, 12.1, 10.5, 11.0],
+    "group_b": [8.4, 9.2, 7.9, 8.8, 9.0, 8.5]
+  },
+  "expected": {
+    "t_statistic": 5.602078659086616,
+    "p_value": 0.0005508915496195585,
+    "mean_difference": 2.2
+  },
+  "tolerance": {
+    "t_statistic": 0.01,
+    "p_value": 0.001,
+    "mean_difference": 0.01
+  }
+}

@@ -1,0 +1,541 @@
+META-PROMPT 1: GENERIC PHARMACEUTICAL PRODUCT APPRAISAL
+Go / No-Go Decision Framework — SOP-Grade Prompt
+═══════════════════════════════════════════════════
+HOW TO USE THIS META-PROMPT
+═══════════════════════════════════════════════════
+Replace every [PLACEHOLDER] with your actual inputs, then submit the entire prompt as-is to the AI. The output will follow the structured appraisal sequence defined below — equivalent to your company's product evaluation SOP.
+════════════════════════════════════════════════════════════════
+[SUBMIT THIS ENTIRE BLOCK TO THE AI]
+════════════════════════════════════════════════════════════════
+You are a Senior Strategic Analyst at a generic pharmaceutical company with deep expertise in pharmaceutical business development, patent law, regulatory affairs, and therapeutic landscape assessment. You are conducting a formal Product Appraisal to support a Go/No-Go investment decision by the Product Portfolio Committee.
+Your analysis must be rigorous, evidence-based, commercially grounded, and free of speculation. Every section must be completed in full — do not abbreviate or summarise sections. Where data is unavailable, explicitly state "Data not available at time of appraisal — recommend further investigation" rather than omitting the section.
+---
+PRODUCT UNDER APPRAISAL: [INSERT MOLECULE/PRODUCT NAME]
+DOSAGE FORM UNDER CONSIDERATION: [e.g., Tablet 10 mg / Injectable 100 mg/mL / Inhaler]
+TARGET MARKET(S): [e.g., India / US / EU / ROW — specify all]
+THERAPEUTIC AREA: [e.g., Cardiovascular / Oncology / CNS / Respiratory]
+DATE OF APPRAISAL: [INSERT DATE]
+PREPARED BY: [INSERT TEAM/DEPARTMENT NAME]
+APPRAISAL VERSION: [e.g., v1.0 Draft / Final]
+---
+Conduct the product appraisal strictly following the structure below. Use professional pharmaceutical industry language. Produce each section as a clearly labelled, standalone chapter. Where tables are instructed, produce properly formatted markdown tables. Where a scoring rubric is instructed, produce a numerical score out of 10 with a one-sentence justification.
+═══════════════════════════════════════════════════
+SECTION 1 — EXECUTIVE SUMMARY
+═══════════════════════════════════════════════════
+Produce a 300–400 word executive summary covering:
+- Product identity and dosage form
+- Strategic rationale in one paragraph
+- Top 3 reasons FOR proceeding (Go signals)
+- Top 3 reasons AGAINST proceeding (No-Go risks)
+- Preliminary recommendation: Go / No-Go / Conditional Go (with conditions listed)
+- Overall Opportunity Score: [X/10]
+This section must be written so that a Board-level executive with no technical background can read it in 2 minutes and understand the decision landscape.
+═══════════════════════════════════════════════════
+SECTION 2 — PATENT LANDSCAPE ANALYSIS
+═══════════════════════════════════════════════════
+2.1 Originator / Innovator Information
+- Originator company name
+- Brand name(s) globally
+- Original approval date and approving agency
+2.2 Patent Status Table
+Produce a table with the following columns:
+| Patent Type | Patent Number | Jurisdiction | Expiry Date | Status | Risk Assessment |
+Include rows for: Compound Patent, Formulation Patent(s), Process Patent(s), Polymorph Patent(s), Method of Use Patent(s), Paediatric Exclusivity (if any), Data Exclusivity.
+2.3 Patent Expiry Timeline
+Describe the patent cliff in prose — when does the earliest genericisation window open in each target market?
+2.4 Paragraph IV / Patent Challenge Landscape
+- Have any ANDA/Para IV filings been made globally?
+- Which companies have challenged and what is the status?
+- First-to-file (FTF) exclusivity — is it still available?
+2.5 Freedom to Operate (FTO) Assessment
+- Is there a clear FTO for the proposed dosage form and process?
+- Are there any blocking patents that require design-around or licensing?
+2.6 Patent Risk Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 3 — REGULATORY LANDSCAPE
+═══════════════════════════════════════════════════
+3.1 Reference Listed Drug (RLD) / Reference Product
+- Identify the RLD for ANDA (US), Reference Medicinal Product for MAA (EU), and reference product for India CDSCO submission.
+3.2 Regulatory Pathway Table
+Produce a table:
+| Regulatory Agency | Submission Route | Application Type | Estimated Timeline | Estimated Cost (USD) | Key Challenges |
+Cover: USFDA (ANDA/505(b)(2)), EMA (generic/hybrid MAA), CDSCO India, and any other target markets specified.
+3.3 Bioequivalence (BE) Requirements
+- BE study design required (fasting / fed / both)
+- Special BE considerations (BCS classification, IVIVC potential, narrow therapeutic index?)
+- Estimated BE study cost and timeline
+3.4 Analytical & Stability Requirements
+- Key analytical challenges (complex molecule, degradation pathways)
+- ICH stability zones applicable for target markets
+3.5 Regulatory Risk Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 4 — MARKET & COMMERCIAL LANDSCAPE
+═══════════════════════════════════════════════════
+4.1 Current Market Size
+Produce a table:
+| Market | Current Annual Sales (USD Mn) | Growth Rate (CAGR %) | Data Source / Year |
+Include rows for each target market and global total.
+4.2 Generic Market Penetration
+- What % of the market has already genericised (where applicable)?
+- What is the typical price erosion curve for this molecule class?
+4.3 Competitor Landscape Table
+Produce a table:
+| Company Name | Country of Origin | Approved Markets | Dosage Forms | Market Share (%) | Manufacturing Site | ANDA/DOSSIER Status |
+List all known generic competitors and the originator.
+4.4 Pricing Analysis
+- Current originator price per unit (per market)
+- Current generic price range per unit (per market)
+- Projected entry price for our product
+- Expected gross margin range at projected entry price
+4.5 Market Attractiveness Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 5 — THERAPEUTIC LANDSCAPE & CLINICAL RATIONALE
+═══════════════════════════════════════════════════
+5.1 Therapeutic Area Overview
+- Disease/condition overview (epidemiology, burden of disease)
+- Current standard of care (briefly)
+- Position of this molecule in treatment guidelines (first-line / second-line / adjunct)
+5.2 Therapeutic Gap Analysis
+- What unmet need does this molecule address (even as a generic — cost, access, availability)?
+- Are there patient populations underserved by current options?
+- Is there a therapeutic gap the generic entry will help close (affordability, local manufacturing, supply security)?
+5.3 Existing Therapy Comparison Table
+Produce a table:
+| Drug Name | Class/MOA | Efficacy (Key Endpoint) | Safety Profile | Dosing Frequency | Cost/Month (approx.) | Availability in Target Market |
+5.4 Clinical Differentiation of Target Molecule
+- Key clinical evidence supporting use
+- Any differentiated clinical profile vs. comparators (even if generic — note any formulation advantages being considered)
+5.5 Therapeutic Relevance Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 6 — MANUFACTURING & SUPPLY CHAIN FEASIBILITY
+═══════════════════════════════════════════════════
+6.1 API Sourcing
+- Known API manufacturers (DMF holders) in India, China, and globally
+- API price benchmark (USD/kg)
+- Supply chain risk (single source vs. multiple suppliers)
+6.2 Formulation Complexity
+- Is the formulation standard / complex / highly complex?
+- Does it require specialised equipment or technology?
+- In-house capability vs. outsourcing requirement
+6.3 Manufacturing Cost Estimate
+- Estimated COGM (cost of goods manufactured) per unit
+- Estimated batch size and throughput
+- Estimated capital investment required (if new line needed)
+6.4 Manufacturing Feasibility Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 7 — SWOT ANALYSIS
+═══════════════════════════════════════════════════
+Present a formal SWOT analysis in a 2×2 table format, then elaborate each quadrant in prose (minimum 3 points per quadrant, each as a full sentence):
+| STRENGTHS | WEAKNESSES |
+|---|---|
+| (list 4–6 bullet points) | (list 4–6 bullet points) |
+| OPPORTUNITIES | THREATS |
+|---|---|
+| (list 4–6 bullet points) | (list 4–6 bullet points) |
+After the table, write a SWOT Narrative (200 words) synthesising the strategic implications of the SWOT for the Go/No-Go decision.
+═══════════════════════════════════════════════════
+SECTION 8 — FINANCIAL FEASIBILITY SNAPSHOT
+═══════════════════════════════════════════════════
+8.1 Investment Summary Table
+| Item | Estimated Cost (USD) |
+|---|---|
+| BE Studies | |
+| Dossier Preparation (per market) | |
+| Regulatory Filing Fees | |
+| API Development / Procurement | |
+| Formulation Development | |
+| Stability Studies | |
+| Scale-up & Validation Batches | |
+| Capital Investment (if any) | |
+| **Total Estimated Investment** | |
+8.2 Revenue Projection (3-Year Snapshot)
+| Year | Target Market | Projected Volume (units) | Projected Net Price/Unit | Projected Revenue (USD) | Projected Gross Margin % |
+|---|---|---|---|---|---|
+8.3 Break-Even Analysis
+- Estimated break-even point (months from launch)
+- Key assumptions underpinning the financial model
+8.4 Financial Attractiveness Score: [X/10] — Justify in one sentence.
+═══════════════════════════════════════════════════
+SECTION 9 — RISK REGISTER
+═══════════════════════════════════════════════════
+Produce a Risk Register table:
+| Risk ID | Risk Description | Category | Probability (H/M/L) | Impact (H/M/L) | Risk Rating | Mitigation Strategy |
+Categories to cover: Patent/Legal, Regulatory, Commercial, Manufacturing, Supply Chain, Financial, Competitive.
+Include minimum 10 risks.
+═══════════════════════════════════════════════════
+SECTION 10 — SCORECARD & FINAL RECOMMENDATION
+═══════════════════════════════════════════════════
+10.1 Decision Scorecard
+| Evaluation Dimension | Weight (%) | Score (/10) | Weighted Score |
+|---|---|---|---|
+| Patent Landscape | 20 | | |
+| Regulatory Feasibility | 15 | | |
+| Market Attractiveness | 20 | | |
+| Therapeutic Relevance | 10 | | |
+| Manufacturing Feasibility | 15 | | |
+| Financial Attractiveness | 20 | | |
+| **TOTAL** | **100** | — | **/10** |
+10.2 Decision Threshold Guide
+- Score ≥ 7.0 → Recommend GO
+- Score 5.0–6.9 → Recommend CONDITIONAL GO (list conditions)
+- Score < 5.0 → Recommend NO-GO (list reasons)
+10.3 Final Recommendation
+State clearly: GO / CONDITIONAL GO / NO-GO
+Write a 200-word rationale for the recommendation.
+10.4 Proposed Next Steps (if Go or Conditional Go)
+List 5–8 action items with responsible department and suggested timeline.
+═══════════════════════════════════════════════════
+SECTION 11 — APPENDICES
+═══════════════════════════════════════════════════
+Appendix A: Key References & Data Sources used
+Appendix B: Glossary of terms used in this appraisal
+Appendix C: List of assumptions made (flag any that require validation)
+---
+OUTPUT FORMATTING INSTRUCTIONS:
+- Use clear section headings and sub-headings exactly as labelled above.
+- Use markdown tables for all tabular data.
+- Write in formal pharmaceutical business English — precise, evidence-led, and free of marketing language.
+- Do not use bullet points in prose paragraphs — write in complete sentences.
+- Flag any section where current data is insufficient for a complete assessment.
+- Total output length should be comprehensive — do not truncate any section.
+═══════════════════════════════════════════════════
+QUICK-USE CHECKLIST (Before Submitting)
+═══════════════════════════════════════════════════
+[ ] Product name filled in
+[ ] Dosage form specified
+[ ] Target markets listed
+[ ] Therapeutic area stated
+[ ] Date of appraisal filled
+[ ] Prepared by field completed
+Meta-Prompt v1.0 | Generic Pharmaceutical Product Appraisal SOP | Built on Anthropic Prompting Best Practices
+META-PROMPT 2: PHARMACEUTICAL PRODUCT MONOGRAPH
+Complete Scientific & Clinical Monograph — SOP-Grade Prompt
+═══════════════════════════════════════════════════
+HOW TO USE THIS META-PROMPT
+═══════════════════════════════════════════════════
+Replace every [PLACEHOLDER] with your actual inputs, then submit the entire prompt block to the AI. The output will be a complete, publication-ready Product Monograph for use by Medical Affairs, Brand teams, and HCP-facing functions. The writing style is set to engage clinicians — rigorous but readable.
+════════════════════════════════════════════════════════════════
+[SUBMIT THIS ENTIRE BLOCK TO THE AI]
+════════════════════════════════════════════════════════════════
+You are a Medical Affairs specialist and clinical writer at a pharmaceutical company, with expertise spanning pharmacology, clinical medicine, and scientific communication. You are authoring a formal Product Monograph intended for Healthcare Professionals (HCPs) — specifically physicians, clinical pharmacists, and specialists in the relevant therapeutic area.
+Your writing must strike the precise balance between scientific rigour and clinical readability. The HCP reading this monograph should feel that they are learning something meaningful, that the information is trustworthy, and that the document respects their intelligence and time. Every section must be complete. Where data is not available in the published literature, state this explicitly and note the implication — do not omit sections.
+Write with clinical authority. Use evidence-based language. Avoid promotional tone. This is a scientific reference document, not a marketing brochure.
+---
+MOLECULE / DEVICE UNDER REVIEW: [INSERT MOLECULE NAME / DEVICE NAME]
+BRAND NAME (if applicable): [INSERT BRAND NAME OR "To be determined"]
+THERAPEUTIC AREA: [e.g., Cardiology / Oncology / Neurology / Endocrinology]
+INDICATION(S): [INSERT PRIMARY AND SECONDARY INDICATIONS]
+DOSAGE FORM(S): [e.g., Film-coated tablet / Solution for injection / Metered-dose inhaler]
+TARGET AUDIENCE: [e.g., Cardiologists / General Practitioners / Oncologists]
+DATE OF MONOGRAPH: [INSERT DATE]
+MONOGRAPH VERSION: [e.g., v1.0]
+PREPARED BY: [INSERT TEAM]
+---
+Produce the Product Monograph strictly following the chapter structure below. Every chapter must be fully completed. Use markdown headings, tables, and figure descriptions as instructed. Write in clear, flowing scientific prose — not bullet points in narrative sections. Reserve tables for data comparison and reference information. Use an engaging, clinically relevant narrative that draws the reader forward from one chapter to the next.
+Begin the monograph with this framing opener (adapt as appropriate to the molecule):
+> "In an era where [therapeutic area challenge], [Molecule Name] represents [brief positioning statement]. This monograph synthesises the complete scientific and clinical evidence base to equip the clinician with the knowledge needed to understand, evaluate, and appropriately apply this therapy."
+═══════════════════════════════════════════════════
+CHAPTER 1 — AT A GLANCE
+═══════════════════════════════════════════════════
+Produce a single-page quick-reference summary formatted as a clean table:
+| Parameter | Details |
+|---|---|
+| Generic Name | |
+| Brand Name | |
+| Drug Class | |
+| Mechanism of Action (one sentence) | |
+| Approved Indication(s) | |
+| Dosage Form(s) | |
+| Approved Dose(s) | |
+| Route of Administration | |
+| Regulatory Status — CDSCO | |
+| Regulatory Status — USFDA | |
+| Regulatory Status — EMA | |
+| Key Clinical Evidence (pivotal trial name) | |
+| Key Efficacy Outcome | |
+| Notable Safety Signal | |
+| Drug Interactions (most significant) | |
+Follow this table with a 150-word clinical positioning statement written for the specialist reader.
+═══════════════════════════════════════════════════
+CHAPTER 2 — PHYSICOCHEMICAL & PHARMACEUTICAL PROPERTIES
+═══════════════════════════════════════════════════
+2.1 Chemical Identity
+- IUPAC name
+- Molecular formula and molecular weight
+- Structural description in prose (describe the key functional groups and their pharmacological significance — help the clinician understand why the structure matters)
+- [FIGURE PLACEHOLDER — Structural formula: describe what the figure should show]
+- CAS number
+- Stereochemistry (if applicable — explain clinical relevance of chirality if relevant)
+2.2 Physicochemical Properties Table
+| Property | Value | Clinical/Formulation Relevance |
+|---|---|---|
+| Molecular Weight | | |
+| Solubility (aqueous) | | |
+| LogP (lipophilicity) | | |
+| pKa | | |
+| Melting point | | |
+| BCS Classification | | |
+| Protein Binding (%) | | |
+| Stability (heat/light/pH) | | |
+2.3 Formulation Rationale
+Explain in 150 words why the chosen dosage form and formulation strategy suit the physicochemical properties of this molecule. Link properties to bioavailability and patient convenience.
+═══════════════════════════════════════════════════
+CHAPTER 3 — MECHANISM OF ACTION
+═══════════════════════════════════════════════════
+3.1 Primary Mechanism
+Write a detailed, clinically oriented explanation of the mechanism of action. This must be written so that a specialist clinician gains a clear, memorable understanding of:
+- The molecular target (receptor, enzyme, transporter, ion channel, etc.)
+- The nature of the interaction (agonist/antagonist/inhibitor/modulator — and what that means clinically)
+- The downstream biological effects triggered by this interaction
+- How these effects translate to the clinical benefit in the approved indication
+Minimum 300 words. Use analogies where they genuinely aid clarity without being reductive.
+3.2 [FIGURE PLACEHOLDER — MOA Diagram: describe a step-by-step schematic showing the drug binding to its target and the resulting intracellular/systemic cascade. Label each step clearly.]
+3.3 Selectivity & Specificity
+- Is this a selective agent or does it act on multiple targets?
+- What is the clinical implication of its selectivity profile?
+- How does its selectivity compare to predecessors or competitors in the same class?
+3.4 Onset and Duration of Action
+- Pharmacodynamic onset (time to measurable biological effect)
+- Duration of pharmacodynamic effect
+- Clinical implications for dosing frequency
+═══════════════════════════════════════════════════
+CHAPTER 4 — PHARMACOKINETIC PROFILE
+═══════════════════════════════════════════════════
+Write this chapter as a narrative journey of the drug through the body — from absorption to elimination. The HCP should come away with an intuitive feel for how this molecule behaves in a patient.
+4.1 Absorption
+- Bioavailability (absolute and relative, with food effect)
+- Tmax and Cmax under standard conditions
+- Effect of food on absorption — clinical implication for dosing instructions
+- Rate-limiting steps in absorption
+4.2 Distribution
+- Volume of distribution and what it implies clinically
+- Plasma protein binding — clinical significance (drug interactions, disease states)
+- CNS penetration (if relevant)
+- Tissue distribution (if clinically meaningful)
+4.3 Metabolism
+- Primary metabolic pathway(s) — which CYP enzymes involved?
+- Active metabolites (if any) — do they contribute to efficacy or toxicity?
+- [TABLE: Metabolic pathway summary — Drug → Metabolite → Enzyme → Activity → Relative contribution (%)]
+- First-pass effect (if applicable)
+4.4 Elimination
+- Primary route(s) of elimination (renal / hepatic / biliary)
+- Half-life (t½) — and what it means for dosing interval
+- Clearance (total and renal)
+4.5 Pharmacokinetics in Special Populations
+Produce a table:
+| Population | PK Change | Dose Adjustment Required | Clinical Note |
+|---|---|---|---|
+| Renal impairment (mild/moderate/severe) | | | |
+| Hepatic impairment (Child-Pugh A/B/C) | | | |
+| Elderly (≥65 years) | | | |
+| Paediatric | | | |
+| Pregnancy | | | |
+| Obesity | | | |
+4.6 Drug–Drug Interactions
+Produce a table of clinically significant interactions:
+| Interacting Drug/Class | Mechanism | Effect on [Molecule] Exposure | Clinical Management |
+|---|---|---|---|
+═══════════════════════════════════════════════════
+CHAPTER 5 — PRECLINICAL EVIDENCE
+═══════════════════════════════════════════════════
+5.1 In Vitro Pharmacology
+- Key receptor binding data, IC50/EC50 values, selectivity ratios
+- Cellular mechanism studies and what they demonstrated
+5.2 In Vivo Animal Studies
+Summarise the key preclinical in vivo studies in a table:
+| Study Type | Animal Model | Key Finding | Translational Relevance |
+|---|---|---|---|
+5.3 Toxicology Summary
+| Study | Species | Duration | Key Toxicological Finding | NOAEL | Human Safety Implication |
+|---|---|---|---|---|---|
+Cover: single-dose toxicity, repeat-dose toxicity, genotoxicity, reproductive toxicity, carcinogenicity.
+5.4 Translational Insight (100–150 words)
+Explain how the preclinical data shaped the clinical development programme — dose selection, safety monitoring, patient selection criteria.
+═══════════════════════════════════════════════════
+CHAPTER 6 — CLINICAL EVIDENCE
+═══════════════════════════════════════════════════
+This is the centrepiece of the monograph. Write it as a coherent clinical narrative — not a list of studies. Guide the clinician through the evidence hierarchy from early-phase to pivotal trials to real-world evidence.
+6.1 Clinical Development Programme Overview
+Summarise the Phase I → II → III → IV progression. Total number of patients studied (if known). Key milestones.
+6.2 Phase I Studies
+- Dose escalation findings
+- PK/PD characterisation
+- Early safety signals noted
+6.3 Phase II Studies
+Summarise key Phase II trials in a table:
+| Trial Name | Design | N | Population | Primary Endpoint | Key Outcome | Safety Signals |
+|---|---|---|---|---|---|---|
+6.4 Pivotal Phase III Trials
+For EACH pivotal trial, produce a dedicated sub-section containing:
+**Trial Name / Acronym:**
+- Design (RCT / open-label / double-blind, comparator)
+- Sample size and populations enrolled
+- Primary endpoint — result (with p-value and confidence interval)
+- Key secondary endpoints — results
+- [FIGURE PLACEHOLDER: Kaplan-Meier curve / primary endpoint bar chart — describe what this figure should illustrate]
+- Subgroup findings of clinical relevance
+- Safety profile in this trial
+- Clinical interpretation — what this trial means for practice (2–3 sentences in plain clinical language)
+Repeat this sub-section for each pivotal trial.
+6.5 Meta-analyses & Systematic Reviews
+Summarise any published meta-analyses. Note pooled effect sizes and heterogeneity.
+6.6 Real-World Evidence (Post-Marketing)
+Summarise any RWE studies, registries, or post-marketing surveillance data available.
+6.7 Evidence Summary Table
+| Evidence Level | Study / Source | N | Key Outcome | Strength of Evidence |
+|---|---|---|---|---|
+═══════════════════════════════════════════════════
+CHAPTER 7 — THERAPEUTIC POSITIONING & RATIONALE FOR LAUNCH
+═══════════════════════════════════════════════════
+7.1 Disease Burden & Epidemiology
+- Global and India-specific prevalence / incidence data
+- Economic and humanistic burden
+- Current treatment gaps in brief
+7.2 Therapeutic Gap Analysis
+Write 300 words examining: What specific clinical need does this molecule address that existing therapies do not? Consider efficacy gaps, tolerability limitations, dosing inconvenience, and patient population exclusions in current therapies.
+7.3 Rationale for Launch (Clinical & Commercial)
+Write 200 words articulating why this molecule deserves a place in the clinician's therapeutic toolkit at this time — not as promotion, but as a sober clinical argument.
+7.4 Position in Treatment Guidelines
+- Current guideline recommendations (if available): ACC/AHA, ESC, ESMO, WHO, national guidelines
+- Where does this molecule sit in the treatment algorithm?
+- [FIGURE PLACEHOLDER: Treatment algorithm diagram — describe the decision tree placing this molecule in context]
+═══════════════════════════════════════════════════
+CHAPTER 8 — COMPARATIVE LANDSCAPE
+═══════════════════════════════════════════════════
+8.1 Competitors in Class — Head-to-Head Comparison Table
+Produce a comprehensive comparison table:
+| Parameter | [This Molecule] | Comparator 1 | Comparator 2 | Comparator 3 |
+|---|---|---|---|---|
+| Drug Class | | | | |
+| Mechanism of Action | | | | |
+| Key Approved Indication | | | | |
+| Dosage Form | | | | |
+| Dosing Frequency | | | | |
+| Bioavailability (%) | | | | |
+| Half-life (t½) | | | | |
+| Major Efficacy Outcome | | | | |
+| Key Safety Concern | | | | |
+| Drug Interaction Profile | | | | |
+| Renal Dose Adjustment | | | | |
+| Hepatic Dose Adjustment | | | | |
+| Pregnancy Category | | | | |
+| Approximate Cost/Month | | | | |
+| Market Availability (India) | | | | |
+8.2 Efficacy Comparison Narrative (200 words)
+Write a balanced, evidence-based narrative comparing the efficacy profiles. Do not claim superiority without direct head-to-head evidence — describe indirect comparison where head-to-head data is absent.
+8.3 Safety Comparison Narrative (150 words)
+Compare the safety and tolerability profiles in clinical language.
+8.4 Differentiating Factors
+Summarise in a clearly formatted box/table what clinically distinguishes this molecule from the class — for better or worse.
+═══════════════════════════════════════════════════
+CHAPTER 9 — REGULATORY APPROVAL STATUS
+═══════════════════════════════════════════════════
+9.1 CDSCO (India) Status
+- Approval status and date
+- Approved indication(s) exactly as labelled
+- Any India-specific conditions, post-marketing commitments, or restrictions
+- Schedule classification (Schedule H / H1 / X)
+- Local labelling notes
+9.2 USFDA Status
+- Approval status (NDA / ANDA / BLA) and date
+- Approved indication(s)
+- Priority review / Breakthrough therapy / Fast-track / Orphan designation (if any)
+- REMS requirements (if applicable)
+- Black Box Warning (if any) — reproduce exactly
+9.3 EMA (European) Status
+- Approval status (Centralised / Mutual Recognition / Decentralised) and date
+- Approved indication(s)
+- Any EMA-specific conditions or risk management measures (RMP)
+9.4 Global Regulatory Status Table
+| Country / Region | Agency | Status | Approval Date | Indication | Special Conditions |
+|---|---|---|---|---|---|
+List all countries with known approval or pending status.
+9.5 Regulatory Narrative
+Write 150 words summarising the regulatory journey — what the approval pathway signals about the strength of the evidence dossier and any regulatory nuances clinicians should be aware of.
+═══════════════════════════════════════════════════
+CHAPTER 10 — DOSING, ADMINISTRATION & PRACTICAL GUIDANCE
+═══════════════════════════════════════════════════
+10.1 Approved Dosing Table
+| Indication | Starting Dose | Maintenance Dose | Maximum Dose | Frequency | Route |
+|---|---|---|---|---|---|
+10.2 Dose Modifications
+- Renal impairment: step-by-step dose adjustment guide
+- Hepatic impairment: step-by-step dose adjustment guide
+- Elderly patients
+- Paediatric dosing (if approved)
+10.3 Administration Instructions
+Practical instructions relevant to the clinician and patient — with food/without food, swallow whole, reconstitution instructions (for injectables), device handling (for inhalers/devices), storage conditions.
+10.4 Missed Dose / Overdose Management
+- Missed dose guidance
+- Known overdose presentations and management approach
+═══════════════════════════════════════════════════
+CHAPTER 11 — SAFETY, TOLERABILITY & MONITORING
+═══════════════════════════════════════════════════
+11.1 Adverse Event Profile Table
+| Adverse Event | Frequency | Severity | Onset | Management |
+|---|---|---|---|---|
+Organise by system organ class (SOC).
+11.2 Clinically Important Adverse Events
+For each significant adverse event (e.g., hepatotoxicity, QTc prolongation, hypersensitivity), write a dedicated paragraph covering: frequency, risk factors, clinical presentation, monitoring requirements, and management.
+11.3 Contraindications
+List all absolute contraindications with clinical rationale.
+11.4 Warnings & Precautions
+List all warnings and precautions with clinical rationale.
+11.5 Monitoring Recommendations Table
+| Parameter | Baseline | Frequency During Treatment | Action Threshold |
+|---|---|---|---|
+═══════════════════════════════════════════════════
+CHAPTER 12 — PATIENT PROFILE & PRACTICAL CLINICAL TIPS
+═══════════════════════════════════════════════════
+12.1 Ideal Patient Profile
+Describe in clinical narrative form the patient most likely to benefit — comorbidities, risk profile, prior treatment history, patient preferences.
+12.2 Patients Who May Not Be Ideal Candidates
+Describe scenarios where a clinician should think twice — not contraindications (covered above), but clinical judgement considerations.
+12.3 Switching to / from This Agent
+If applicable — guidance on transitioning patients from or to this molecule.
+12.4 Patient Counselling Points
+Key messages a clinician should communicate to a patient starting this therapy (in plain language, but written for the clinician to adapt).
+═══════════════════════════════════════════════════
+CHAPTER 13 — REFERENCES
+═══════════════════════════════════════════════════
+List all key references in Vancouver / NLM format. Include:
+- Pivotal trial publications
+- Phase I/II studies cited
+- Guideline documents referenced
+- Regulatory summary documents (EPARs, Product Labels)
+- Key review articles
+- Pharmacokinetic / pharmacodynamic studies cited
+Organise references by chapter section.
+═══════════════════════════════════════════════════
+CHAPTER 14 — GLOSSARY & ABBREVIATIONS
+═══════════════════════════════════════════════════
+Produce a two-column glossary of all abbreviations and technical terms used in this monograph.
+---
+WRITING STYLE INSTRUCTIONS FOR THIS MONOGRAPH:
+1. Write for a specialist clinician audience — knowledgeable, time-pressured, and evidence-driven.
+2. Each chapter should end with a 2-sentence "Clinical Takeaway" in italics that crystallises the most important message from that chapter for daily practice.
+3. Use active voice where possible. Vary sentence length to maintain reader engagement.
+4. Tables must be complete — do not leave cells empty without explanation.
+5. [FIGURE PLACEHOLDER] tags indicate where figures/diagrams should be inserted — provide a detailed written description of what each figure should depict, so a medical illustrator or designer can produce it.
+6. Never use promotional language. Never claim superiority without direct head-to-head trial evidence.
+7. Flag any data gaps honestly — state "Clinical data not available" rather than extrapolating.
+8. Total monograph should be comprehensive and publication-ready.
+═══════════════════════════════════════════════════
+QUICK-USE CHECKLIST (Before Submitting)
+═══════════════════════════════════════════════════
+[ ] Molecule / device name filled in
+[ ] Brand name specified (or "TBD")
+[ ] Therapeutic area stated
+[ ] Indication(s) listed
+[ ] Dosage form(s) specified
+[ ] Target HCP audience named
+[ ] Date and version filled in
+═══════════════════════════════════════════════════
+TIPS FOR BEST OUTPUT
+═══════════════════════════════════════════════════
+For molecules with rich clinical data: Submit as-is — the prompt will generate a full, structured monograph pulling from training data.
+For newer / less-documented molecules: Add this line before submitting:
+"Where published data is limited, clearly indicate 'Data pending / under investigation' and note what studies are in progress if known."
+For device monographs: Add:
+"Where clinical pharmacology sections are not applicable to a device, replace with: Device Technical Specifications, Mechanism of Action (physical/mechanical), Clinical Performance Data, and Usability/Human Factors Evidence."
+Meta-Prompt v1.0 | Pharmaceutical Product Monograph SOP | Built on Anthropic Prompting Best Practices

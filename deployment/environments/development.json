@@ -1,0 +1,30 @@
+{
+  "name": "development",
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "name": "clincommand",
+    "ssl": false
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "tls": false
+  },
+  "kms": {
+    "provider": "LOCAL",
+    "keyArn": "local-key-arn-100-percent-secure"
+  },
+  "sso": {
+    "enabled": false,
+    "providers": []
+  },
+  "featureFlags": {
+    "wearables_telemetry": { "enabled": true, "rollout": 100 },
+    "rsdv_ocr": { "enabled": true, "rollout": 100 },
+    "rbm_ai": { "enabled": true, "rollout": 100 },
+    "dct_virtual_visits": { "enabled": true, "rollout": 100 },
+    "epro_sync": { "enabled": true, "rollout": 100 }
+  }
+}

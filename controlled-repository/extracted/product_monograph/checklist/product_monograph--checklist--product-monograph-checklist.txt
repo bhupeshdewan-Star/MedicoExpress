@@ -1,0 +1,27 @@
+Check List-Monograph
+
+[TABLE 1]
+Sr. | Parameter | YES | NO | NA
+1 | Title Page |  |  | 
+2 | Table of Contents |  |  | 
+3 | Summary of   Monograph |  |  | 
+4 | Introduction/background |  |  | 
+5 | Rationale for product launch |  |  | 
+6 | Pharmaceutical Information |  |  | 
+7 | Clinical Pharmacology |  |  | 
+6 | Indications and Clinical Use |  |  | 
+7 | Contraindications |  |  | 
+8 | Dosage and Administration |  |  | 
+9 | Drug Interactions |  |  | 
+10 | Serious Warnings and Precautions |  |  | 
+11 | Adverse Reactions |  |  | 
+12 | Landmark Clinical Trials |  |  | 
+13 | Efficacy and Safety Studies |  |  | 
+14 | Pivotal Comparative Bioavailability Studies |  |  | 
+15 | Summary & Key Points |  |  | 
+16 | References |  |  | 
+17 | Prescribing Information |  |  | 
+18 | Is there a duplication of information |  |  | 
+19 | Figures and tables duly numbered and detailed in the text |  |  | 
+20 | Authentic references should be cited in the text |  |  | 
+21 | Key information should be easy to locate |  |  | 

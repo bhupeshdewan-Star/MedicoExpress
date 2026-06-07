@@ -1,0 +1,9 @@
+{
+  "name": "crypto-sdk",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ – Enterprise Cryptographic Key Abstraction SDK (KMS envelope encryption, signing, verification, rotation, Merkle sealing)",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "dependencies": {}
+}

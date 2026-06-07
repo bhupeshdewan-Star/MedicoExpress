@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: clincommand-api-service
+  namespace: clincommand-production
+  labels:
+    app: clincommand-api
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+    protocol: TCP
+  selector:
+    app: clincommand-api
+  type: ClusterIP

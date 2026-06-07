@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #14b8a6;
+  --color-brand-teal-dark: #0d9488;
+  --color-brand-teal-light: #99f6e4;
+  
+  --color-brand-blue: #3b82f6;
+  --color-brand-blue-dark: #2563eb;
+  --color-brand-blue-light: #dbeafe;
+  
+  --color-brand-green: #15803d;
+  --color-brand-green-dark: #166534;
+  --color-brand-green-light: #dcfce7;
+  
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --border-radius-card: 8px;
+  --border-radius-button: 6px;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+/* Custom Scrollbar for Stripe/Linear aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full transition-colors;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-800;
+}
+
+/* Focus styles for GxP visual elements */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #14b8a6;
+}
+
+/* Print-optimized layout media CSS queries for GxP Compliance */
+@media print {
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+  
+  /* Hide sidebar, headers, help drawers, copilot drawers, and navigation tabs */
+  aside, header, nav, button, .no-print, [role="button"], [class*="border-b-2"] {
+    display: none !important;
+  }
+  
+  /* Maximize main content workspace area */
+  main, .flex-1, .grid, .bg-white, .bg-slate-50 {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #000000 !important;
+  }
+
+  /* Document body sizing */
+  .whitespace-pre-line {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Page breaks optimization for logs and logs lists */
+  tr, h1, h2, h3, h4, blockquote, pre {
+    page-break-inside: avoid !important;
+  }
+  
+  /* Ensure signatures block is on the same page when printing */
+  .border-brand-teal-light, .pl-3 {
+    border: 1px solid #cbd5e1 !important;
+    padding: 10px !important;
+    margin-top: 20px !important;
+    page-break-inside: avoid !important;
+  }
+}
+

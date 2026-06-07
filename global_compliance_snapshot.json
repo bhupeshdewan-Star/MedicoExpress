@@ -1,0 +1,25 @@
+{
+  "snapshotId": "COMP-SNAP-1780538700015",
+  "timestamp": "2026-06-04T02:05:00.015Z",
+  "globalSignature": "e640690e254f3fc0db01cb2d32abfd3ba94173b77e27feb3eee63446456d1e9e",
+  "verificationSteps": [
+    {
+      "name": "release.seal",
+      "path": "D:\\Antigravity\\ClinCommand OS\\deployment\\release\\release.seal",
+      "sha256": "c0dd3cc73f4f43419e97f258073a997f1f59cedc298f413667a6abc0a4e8c7a9",
+      "status": "VERIFIED"
+    },
+    {
+      "name": "checksums.json",
+      "path": "D:\\Antigravity\\ClinCommand OS\\deployment\\release\\checksums.json",
+      "sha256": "21d7a3663eb6307bcd1b99ecc28133119a69952ecf9d4926b620afec41f6abda",
+      "status": "VERIFIED"
+    },
+    {
+      "name": "live_audit_stream.jsonl",
+      "path": "N/A",
+      "sha256": "b7099b0265de8dffb2801e8af2dbee78bd32ad157c8c14bda398d5e4f7c68174",
+      "status": "MOCKED"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clincommand-api
+  namespace: clincommand-production
+  labels:
+    app: clincommand-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clincommand-api
+  template:
+    metadata:
+      labels:
+        app: clincommand-api
+    spec:
+      containers:
+      - name: api
+        image: gcr.io/clincommand-prod/api:v16.2
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: clincommand-prod-secrets
+        resources:
+          limits:
+            cpu: "1"
+            memory: 1024Mi
+          requests:
+            cpu: "250m"
+            memory: 512Mi
+        livenessProbe:
+          httpGet:
+            path: /api/v1/system/health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /api/v1/system/health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5

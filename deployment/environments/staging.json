@@ -1,0 +1,30 @@
+{
+  "name": "staging",
+  "database": {
+    "host": "staging-db.novabio.internal",
+    "port": 5432,
+    "user": "postgres",
+    "name": "clincommand_staging",
+    "ssl": false
+  },
+  "redis": {
+    "host": "staging-redis.novabio.internal",
+    "port": 6379,
+    "tls": false
+  },
+  "kms": {
+    "provider": "LOCAL",
+    "keyArn": "staging-key-arn-secure"
+  },
+  "sso": {
+    "enabled": true,
+    "providers": ["Okta"]
+  },
+  "featureFlags": {
+    "wearables_telemetry": { "enabled": true, "rollout": 100 },
+    "rsdv_ocr": { "enabled": true, "rollout": 100 },
+    "rbm_ai": { "enabled": true, "rollout": 50 },
+    "dct_virtual_visits": { "enabled": true, "rollout": 100 },
+    "epro_sync": { "enabled": true, "rollout": 100 }
+  }
+}

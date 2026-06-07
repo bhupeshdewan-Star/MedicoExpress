@@ -1,0 +1,12 @@
+{
+  "name": "wearables-gateway",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Node.js Wearables & Devices Ingestion Gateway",
+  "private": true,
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  }
+}

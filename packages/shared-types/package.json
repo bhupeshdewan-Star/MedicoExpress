@@ -1,0 +1,8 @@
+{
+  "name": "shared-types",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Shared TypeScript Interfaces and Types",
+  "private": true,
+  "main": "index.js",
+  "type": "module"
+}

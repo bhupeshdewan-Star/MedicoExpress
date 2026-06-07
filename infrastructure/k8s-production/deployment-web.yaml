@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clincommand-web
+  namespace: clincommand-production
+  labels:
+    app: clincommand-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clincommand-web
+  template:
+    metadata:
+      labels:
+        app: clincommand-web
+    spec:
+      containers:
+      - name: web
+        image: gcr.io/clincommand-prod/web:v16.2
+        ports:
+        - containerPort: 3000
+        resources:
+          limits:
+            cpu: "500m"
+            memory: 512Mi
+          requests:
+            cpu: "100m"
+            memory: 256Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 15
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5

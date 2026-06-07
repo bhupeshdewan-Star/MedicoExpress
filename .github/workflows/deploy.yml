@@ -1,0 +1,43 @@
+name: Deploy ClinCommand OS to Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CLOUD_RUN_SERVICE: clincommand-os
+  CLOUD_RUN_REGION: asia-southeast1
+
+jobs:
+  build-and-deploy:
+    name: Source Deploy to Cloud Run
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Deploy source to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v3
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service: ${{ env.CLOUD_RUN_SERVICE }}
+          region: ${{ env.CLOUD_RUN_REGION }}
+          source: .
+          flags: --allow-unauthenticated --port=8000
+          env_vars: |
+            NODE_ENV=production
+
+      - name: Show service URL
+        run: echo "${{ steps.deploy.outputs.url }}"

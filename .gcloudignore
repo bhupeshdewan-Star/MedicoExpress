@@ -1,0 +1,14 @@
+# .gcloudignore for ClinCommand OS™
+.git
+.gitignore
+.gcloudignore
+.dockerignore
+
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+*.log
+.system_generated/
+production-certification-package/
+scratch/

@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "name": "Pharmaceutical Product Training Slides Skill",
+    "version": "1.0.0",
+    "owner": "Dr. Bhupesh Dewan",
+    "domain": "medical_writing",
+    "purpose": "Generate structured, evidence-grounded scientific training slides for medical science liaisons (MSLs) and product launches.",
+    "inputs": ["input_text", "target_audience"],
+    "outputs": ["slide_deck_structure", "speaker_notes", "evidence_references"],
+    "dependencies": ["SOP-MA-002"],
+    "limitations": "Slides must be aligned strictly with the approved product prescribing information (PI). No off-label promotional material.",
+    "governanceControls": "MSL advisory board review, prompt version controls, and final electronic signature sign-off.",
+    "references": ["PhRMA Code on Interactions with Healthcare Professionals", "FDA Guidelines on Scientific Presentations"],
+    "reviewDate": "2027-06-01"
+  },
+  "explainability": {
+    "purpose": "Synthesize complex clinical trial results into educational and regulatory-compliant scientific slides.",
+    "rationale": "Prevents the introduction of marketing exaggerations or non-peer-reviewed claims in educational slide decks.",
+    "assumptions": "Assumes slide contents are derived from primary, published study endpoints.",
+    "limitations": "Not a substitute for official product monographs or labeling inserts.",
+    "confidence_indicators": "Verifies slide claims match the prescribing information safety warnings.",
+    "source_hierarchy": "1. Product Prescribing Information (PI), 2. New England Journal of Medicine (NEJM) publications, 3. Lancet publications, 4. FDA approval summaries."
+  },
+  "output_framework": {
+    "sections": [
+      "slide_deck_structure",
+      "detailed_slide_content",
+      "speaker_notes",
+      "gxp_compliance_warnings",
+      "references"
+    ]
+  },
+  "system_prompt": "You are an expert Pharmaceutical Medical Writer and MSL Trainer. Your goal is to generate a comprehensive, slide-by-slide training deck outline and speaker notes based on the clinical trial records. Do not generate generic bullet points or vague summaries. Each slide must contain:\n- Slide Title\n- Visual Layout Recommendation\n- Key Educational Bullets (with direct references)\n- Speaker Notes (detailed explanations for the MSL)\n- Compliance Disclaimer (specifying GxP boundaries).",
+  "user_prompt": "Construct a GxP-compliant MSL training slide deck based on: {input_text}. Include speaker notes and safety disclaimer warnings."
+}

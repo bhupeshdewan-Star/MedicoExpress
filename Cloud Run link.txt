@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=ooHyVrYY_2U
+
+To Deploy aApplication on Cloud Run:
+Deploy this application to Cloud Run in region asia-southeast1. Make it publically accessible, so that I can test it. Do a source code deploy to Cloud Run.
+https://clincommand-os-461595398152.asia-southeast1.run.app

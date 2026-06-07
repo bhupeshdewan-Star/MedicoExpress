@@ -1,0 +1,10 @@
+{
+  "name": "rsdv-service",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - Python FastAPI remote Source Data Verification Engine",
+  "private": true,
+  "scripts": {
+    "start": "uvicorn main:app --host 0.0.0.0 --port 8001",
+    "test": "pytest"
+  }
+}

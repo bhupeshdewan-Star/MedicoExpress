@@ -1,0 +1,52 @@
+groups:
+  - name: clincommand-enterprise-alerts
+    rules:
+      # 1. API Latency Alert
+      - alert: HighAPILatency
+        expr: http_api_request_duration_ms_bucket{le="500"} / http_api_request_duration_ms_count < 0.90
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High API Latency detected on {{ $labels.path }}"
+          description: "Over 10% of API requests completed in longer than 500ms for path {{ $labels.path }} during the last 2 minutes."
+
+      # 2. Authentication Brute-Force Alert
+      - alert: AuthBruteForceAttempt
+        expr: rate(auth_failed_login_attempts_total[1m]) > 5
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Brute-force login attempt detected from IP {{ $labels.ip }}"
+          description: "More than 5 login attempts failed in under 1 minute from IP address {{ $labels.ip }}."
+
+      # 3. ePRO Sync Failures Alert
+      - alert: EproSyncQueueBackup
+        expr: epro_sync_failed_jobs_total > 5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "ePRO Synchronization failures detected"
+          description: "Multiple queued ePRO diary uploads are failing to sync for tenant {{ $labels.tenant_id }}. Current queue count: {{ $value }}."
+
+      # 4. OCR Processing Backlog Alert
+      - alert: OcrBacklogHigh
+        expr: rsdv_ocr_backlog_pages_total > 1000
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Remote SDV OCR page backlog high"
+          description: "OCR translation queue exceeds 1,000 pages for 10 consecutive minutes. Current page count: {{ $value }}."
+
+      # 5. Database Replication Lag Alert
+      - alert: PostgresReplicationLag
+        expr: pg_replication_lag_bytes > 50000000
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Postgres database replication lag exceeds threshold"
+          description: "Postgres replication lag between Multi-AZ nodes is over 50MB. Potential DR sync boundary gap. Current lag: {{ $value }} bytes."

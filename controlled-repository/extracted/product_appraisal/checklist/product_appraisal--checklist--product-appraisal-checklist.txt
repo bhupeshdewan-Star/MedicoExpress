@@ -1,0 +1,131 @@
+Checklist – PRODUCT APPRAISAL
+
+[TABLE 1]
+Parameter | Parameter | YES | YES | NO | NO | NA
+Title page | Title page |  |  |  |  | 
+Name of document- “Product Appraisal” | Name of document- “Product Appraisal” |  |  |  |  | 
+Proper or common name of the drug product | Proper or common name of the drug product |  |  |  |  | 
+Strength(s) and Route(s) of Administration | Strength(s) and Route(s) of Administration |  |  |  |  | 
+The therapeutic, diagnostic or pharmacological classification | The therapeutic, diagnostic or pharmacological classification |  |  |  |  | 
+Sponsor Name (company) | Sponsor Name (company) |  |  |  |  | 
+Company Address | Company Address |  |  |  |  | 
+Date of Initial Approval: DD, MM, YYYY | Date of Initial Approval: DD, MM, YYYY |  |  |  |  | 
+Date of Revision: DD, MM, YYYY | Date of Revision: DD, MM, YYYY |  |  |  |  | 
+ |  |  |  |  |  | 
+Table of Contents | Table of Contents |  |  |  |  | 
+Table of contents with page numbers | Table of contents with page numbers |  |  |  |  | 
+ |  |  |  |  |  | 
+Summary product appraisal | Summary product appraisal |  |  |  |  | 
+Brief but comprehensive synopsis | Brief but comprehensive synopsis |  |  |  |  | 
+Mention the recommendation whether drug is to be launched or not | Mention the recommendation whether drug is to be launched or not |  |  |  |  | 
+Introduction/background | Introduction/background |  |  |  |  | 
+Problem statement | Problem statement |  |  |  |  | 
+Overview of factors which have led to the problem | Overview of factors which have led to the problem |  |  |  |  | 
+Epidemiological significance relative to the problem | Epidemiological significance relative to the problem |  |  |  |  | 
+Basic scientific concepts related to the concerned medicinal product | Basic scientific concepts related to the concerned medicinal product |  |  |  |  | 
+Rationale for product launch | Rationale for product launch |  |  |  |  | 
+Existing therapy gaps in the management of particular disease | Existing therapy gaps in the management of particular disease |  |  |  |  | 
+Elaboration of how this “new drug” will address the gaps | Elaboration of how this “new drug” will address the gaps |  |  |  |  | 
+Unique features or advantages over existing standard treatment | Unique features or advantages over existing standard treatment |  |  |  |  | 
+ |  |  |  |  |  | 
+Scientific Information | Scientific Information |  |  |  |  | 
+Pharmaceutical Information | Pharmaceutical Information |  |  |  |  | 
+Proper name or common name | Proper name or common name |  |  |  |  | 
+Chemical name | Chemical name |  |  |  |  | 
+Molecular formula and molecular mass | Molecular formula and molecular mass |  |  |  |  | 
+Structural formula | Structural formula |  |  |  |  | 
+Relevant physicochemical properties | Relevant physicochemical properties |  |  |  |  | 
+ |  |  |  |  |  | 
+Clinical Pharmacology | Clinical Pharmacology |  |  |  |  | 
+Mechanism of Action | Mechanism of Action |  |  |  |  | 
+Pharmacodynamics | Pharmacodynamics |  |  |  |  | 
+Microbiology (in case of antimicrobials) | Microbiology (in case of antimicrobials) |  |  |  |  | 
+Details regarding susceptibility testing | Details regarding susceptibility testing |  |  |  |  | 
+Description of reference pathogens studied | Description of reference pathogens studied |  |  |  |  | 
+Information on drug resistance and cross-resistance | Information on drug resistance and cross-resistance |  |  |  |  | 
+Pharmacokinetics | Pharmacokinetics |  |  |  |  | 
+Absorption | Absorption |  |  |  |  | 
+Area under the curve (AUC) | Area under the curve (AUC) |  |  |  |  | 
+Tmax | Tmax |  |  |  |  | 
+Cmax | Cmax |  |  |  |  | 
+Time of onset of action | Time of onset of action |  |  |  |  | 
+Effect of food on absorption | Effect of food on absorption |  |  |  |  | 
+Parameter | YES | YES | NO | NO | NA | NA
+Distribution |  |  |  |  |  | 
+Degree of protein binding |  |  |  |  |  | 
+Volume of distribution (Vd) |  |  |  |  |  | 
+Sites of distribution |  |  |  |  |  | 
+Information regarding whether the drug crosses the blood-brain barrier and placental barrier |  |  |  |  |  | 
+Metabolism |  |  |  |  |  | 
+Sites and pathway of metabolism |  |  |  |  |  | 
+Extent of first-pass metabolism |  |  |  |  |  | 
+Biological/pharmacological activity of metabolites |  |  |  |  |  | 
+Dose dependent changes in metabolism |  |  |  |  |  | 
+Excretion |  |  |  |  |  | 
+Route(s) of excretion |  |  |  |  |  | 
+Percentage of excretion via each route |  |  |  |  |  | 
+Elimination half-life (t½) |  |  |  |  |  | 
+Special Populations/Conditions |  |  |  |  |  | 
+Pharmacokinetic information relevant to special populations (e.g., pediatrics,        geriatrics, gender, genetic polymorphism, and race) |  |  |  |  |  | 
+Pharmacokinetic information relevant to certain conditions (e.g., hepatic   /                 insufficiency, renal insufficiency) |  |  |  |  |  | 
+ |  |  |  |  |  | 
+Indications and Clinical Use |  |  |  |  |  | 
+Point-form listing of the indications |  |  |  |  |  | 
+Indications approved by DCGI or USFDA or EU |  |  |  |  |  | 
+Statement regarding use in the geriatric population |  |  |  |  |  | 
+Statement regarding use in the pediatric population |  |  |  |  |  | 
+Information regarding whether the product is intended for use as an adjunct to other forms of treatment |  |  |  |  |  | 
+Information regarding whether the products requires administration by a specialized health professional or in a restricted setting |  |  |  |  |  | 
+Indications based on substantial clinical evidence |  |  |  |  |  | 
+ |  |  |  |  |  | 
+Contraindications |  |  |  |  |  | 
+Description of situations in which the drug should not be used |  |  |  |  |  | 
+The statement regarding hypersensitivity reactions |  |  |  |  |  | 
+ |  |  |  |  |  | 
+Dosage and Administration |  |  |  |  |  | 
+Recommended Dose |  |  |  |  |  | 
+Route of administration and dosage form |  |  |  |  |  | 
+Optimal method of titrating dosage |  |  |  |  |  | 
+Maintenance dosage |  |  |  |  |  | 
+Duration of treatment |  |  |  |  |  | 
+Drug discontinuation schedule |  |  |  |  |  | 
+Dosage adjustments necessary in special populations or in co-morbidities |  |  |  |  |  | 
+A statement to that effect If no dosage adjustments are required (e.g., No dosage adjustment required in hepatic or renal impairment) |  |  |  |  |  | 
+Time of day for optimal drug effect |  |  |  |  |  | 
+Timing of administration of a dose with respect to food |  |  |  |  |  | 
+
+[TABLE 2]
+Parameter | YES | NO | NA
+Drug Interactions |  |  | 
+ |  |  | 
+Serious Warnings and Precautions |  |  | 
+ |  |  | 
+Adverse Reactions |  |  | 
+Information on all types of adverse drug reactions (ADRs) including those  / identified during clinical trials and as a result of post-market surveillance |  |  | 
+Standard for defining frequency terms based on the Council for International Organizations of Medical Science (CIOMS) convention |  |  | 
+ |  |  | 
+Summary of Important  Clinical Trials |  |  | 
+The pivotal studies in support of the drug's efficacy and safety |  |  | 
+Information on clinical trials presented in a tabular format |  |  | 
+ |  |  | 
+Standard Guidelines supporting New Drug |  |  | 
+Drug’s appropriate place in therapy and recommendations backing |  |  | 
+ |  |  | 
+International Approvals: e.g. USFDA, European Union |  |  | 
+ |  |  | 
+Patent information of Drug |  |  | 
+ |  |  | 
+SWOT Analysis of Drug(Strengths, Weaknesses, Opportunities and Threats) |  |  | 
+ |  |  | 
+Summary & Key Points |  |  | 
+Statement on unique pharmacological/clinical aspect of the medicinal product |  |  | 
+Statement on superior/non-inferior efficacy over existing treatment |  |  | 
+Statement on superior/non-inferior safety profile over existing treatment |  |  | 
+Statement on authentic clinical evidence on proof of concept |  |  | 
+Statement on place in therapy of the concerned disease/disorder |  |  | 
+Unique selling points in terms of marketing perspective in a point-wise format |  |  | 
+ |  |  | 
+References |  |  | 
+Citations follow the Vancouver referencing style |  |  | 
+References numbered to refer to identified statements in the text |  |  | 
+Studies in support of the clinical trial section included |  |  | 

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-06-04T13:11:50.612Z",
+  "certification_status": "QUALIFIED",
+  "latency": {
+    "p50": "45ms",
+    "p90": "85ms",
+    "p95": "120ms",
+    "p99": "180ms",
+    "status": "PASS"
+  },
+  "throughput": {
+    "requestsPerSecond": 250,
+    "telemetryDailyEquivalent": 1000000,
+    "eproDailyEquivalent": 100000
+  },
+  "error_rate": 0,
+  "systemResourceLoad": {
+    "cpuUsagePercent": "15%",
+    "memoryUsageRssMb": 142,
+    "status": "STABLE"
+  },
+  "metadata": {
+    "copyright": "© Dr. Bhupesh Dewan, Mumbai, India — All Rights Reserved"
+  }
+}

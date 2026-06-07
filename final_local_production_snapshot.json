@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-06-04T18:02:53Z",
+  "deploymentTarget": "LOCAL_HOST_PRODUCTION_SIMULATION",
+  "configurations": {
+    "apiCoreUrl": "http://localhost:8000",
+    "webUiUrl": "http://localhost:3000",
+    "mode": "production-simulated-finalized",
+    "nodeEnv": "test",
+    "port": 8000
+  },
+  "runtimeRuntimes": {
+    "nodeVersion": "v26.3.0",
+    "npmVersion": "11.1.0",
+    "viteVersion": "v8.0.16"
+  },
+  "serviceHealthSnapshots": {
+    "apiCore": "RUNNING (PID: 63800)",
+    "webUi": "RUNNING (PID: 74736)",
+    "postgres": "HEALTHY (Mock/In-Memory Interceptor)",
+    "redis": "HEALTHY (In-Memory Fallback)",
+    "kafka": "HEALTHY (Simulated Stream Queue)",
+    "aiService": "HEALTHY (FastAPI Mock Integration)",
+    "ocr": "HEALTHY (OCR Fallback Pipeline)",
+    "storage": "HEALTHY (Local Bucket Provisioned)"
+  },
+  "activeJunctionLinks": [
+    {
+      "linkPath": "d:\\Antigravity\\ClinCommand OS\\apps\\logs",
+      "targetPath": "d:\\Antigravity\\ClinCommand OS\\logs",
+      "type": "Junction"
+    }
+  ],
+  "systemPerformanceStableBaseline": {
+    "cpuUsage": "1.8%",
+    "memoryUsage": "142MB (RSS)",
+    "uptimeSeconds": 1800
+  }
+}

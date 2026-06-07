@@ -1,0 +1,124 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 101,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "title": "Oncology Trial Subject Enrollment Velocity",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "editorMode": "code",
+          "expr": "sum(rate(clinical_subject_enrollments_total[1h])) by (study_id)",
+          "legendFormat": "Study ID: {{study_id}}",
+          "range": true,
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 2,
+      "title": "EDC Form Discrepancy Query Lifespans",
+      "type": "state-timeline",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "sum(subject_data_queries_active_count) by (status)",
+          "legendFormat": "Status: {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 8
+      },
+      "id": 3,
+      "title": "DCT Active Video Room Count",
+      "type": "gauge",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "dct_active_video_consultations",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 8
+      },
+      "id": 4,
+      "title": "Ingested Wearables Telemetry Records Count",
+      "type": "stat",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "rate(wearable_ingested_metrics_total[5m])",
+          "legendFormat": "Records/sec",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 8
+      },
+      "id": 5,
+      "title": "Supply Chain RTSM Low Stock Warnings",
+      "type": "table",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "rtsm_depot_low_stock_alerts",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": ["clincommand", "clinical-ops"],
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "title": "ClinCommand OS™ – Clinical Operations Dashboard",
+  "uid": "clinical_ops_dashboard",
+  "version": 1
+}

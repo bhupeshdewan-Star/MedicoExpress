@@ -1,0 +1,31 @@
+{
+  "reportId": "INT-REP-1780538700017",
+  "timestamp": "2026-06-04T02:05:00.017Z",
+  "status": "INTEGRITY_VERIFIED",
+  "verifications": [
+    {
+      "name": "release.seal",
+      "path": "D:\\Antigravity\\ClinCommand OS\\deployment\\release\\release.seal",
+      "status": "PASS",
+      "sha256": "c0dd3cc73f4f43419e97f258073a997f1f59cedc298f413667a6abc0a4e8c7a9"
+    },
+    {
+      "name": "checksums.json",
+      "path": "D:\\Antigravity\\ClinCommand OS\\deployment\\release\\checksums.json",
+      "status": "PASS",
+      "sha256": "21d7a3663eb6307bcd1b99ecc28133119a69952ecf9d4926b620afec41f6abda"
+    },
+    {
+      "name": "release-validation-report.html",
+      "path": "D:\\Antigravity\\ClinCommand OS\\validation\\release-validation-report.html",
+      "status": "PASS",
+      "sha256": "2773af5b34b1234cbea8b72084cef98b6b37b72a70991766fcd745f09d1f4666"
+    },
+    {
+      "name": "production-qualification-report.html",
+      "path": "D:\\Antigravity\\ClinCommand OS\\validation\\production-qualification-report.html",
+      "status": "PASS",
+      "sha256": "961c8b641bd8e8ac85c74f07dbe43cfdc3300ef3051e364a46ba7afaeb345878"
+    }
+  ]
+}

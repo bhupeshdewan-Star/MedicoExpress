@@ -1,0 +1,59 @@
+groups:
+  - name: clincommand-production-alerts
+    rules:
+      # 1. Core Services Availability
+      - alert: DatabaseServiceDown
+        expr: pg_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL Database Down"
+          description: "Production PostgreSQL database connection has failed for over 1 minute."
+
+      - alert: RedisServiceDown
+        expr: redis_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis Cache Service Down"
+          description: "Redis caching service is unresponsive, disabling rate limiting and caching."
+
+      - alert: ApiGatewayDown
+        expr: up{job="clincommand-api"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "ClinCommand API Gateway Core Offline"
+          description: "The core clinical trials API gateway node is unreachable."
+
+      # 2. Resource Utilizations
+      - alert: HostCpuExhausted
+        expr: node_cpu_seconds_total{mode="idle"} < 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU Usage Warning"
+          description: "System CPU utilization is exceeding 90% continuously."
+
+      - alert: HostMemoryExhausted
+        expr: node_memory_Active_bytes / node_memory_MemTotal_bytes * 100 > 90
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Host Memory Near Capacity"
+          description: "Node memory utilization is exceeding 90% of total host RAM."
+
+      # 3. Performance Latency
+      - alert: P95LatencyBreached
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 0.200
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "P95 Response Latency High"
+          description: "API p95 request latency has breached the 200ms GxP performance threshold."

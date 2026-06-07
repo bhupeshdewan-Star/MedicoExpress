@@ -1,0 +1,30 @@
+{
+  "receiptId": "344b24c5-77a1-449d-9b4a-322922712443",
+  "executionId": "architecture-product-appraisal-package-check",
+  "activity": "product_appraisal",
+  "repositoryManifest": "controlled-repository/manifests/owner-supplied-activity-sources.json",
+  "consultedPackages": [
+    {
+      "assetId": "product_appraisal--skill--pharma-product-appraisal-skill-template",
+      "assetType": "skill",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "34a00abd30a62fccbddc58f8cca8eb7dd837c35166503c99c2faff2d6d965002",
+      "extractedSha256": "c6d12c76f27e481a21d81c8244d23b197bb1cd9dd7c3d465d133b7ba91130e33",
+      "consultedAt": "2026-06-06T06:38:14.652260+00:00"
+    },
+    {
+      "assetId": "product_appraisal--sop--preparation-of-product-appraisal",
+      "assetType": "sop",
+      "status": "OWNER_SUPPLIED_SOURCE",
+      "effectiveForExecution": false,
+      "originalSha256": "34fa9fae235d05fc9595c1c5a568fdfd1fa67710b62bd814ae11fa37ee533e99",
+      "extractedSha256": "9dc0d5a1f1c9d82677d47667870763bb9a5b859686250cb7e86271b7713d3f9c",
+      "consultedAt": "2026-06-06T06:38:14.653775+00:00"
+    }
+  ],
+  "missingRequiredAssetTypes": [],
+  "result": "READY_FOR_DRAFT_PLANNING",
+  "note": "Owner-supplied source status permits draft planning only. Effective production execution requires explicit approval and effective status.",
+  "createdAt": "2026-06-06T06:38:14.653775+00:00"
+}

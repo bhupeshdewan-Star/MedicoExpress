@@ -1,0 +1,48 @@
+{
+  "id": 103,
+  "title": "ClinCommand OS™ – Enterprise Security Dashboard",
+  "uid": "security_dashboard",
+  "style": "dark",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Failed Login Attempts & Brute Force Tracking",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "sum(rate(auth_failed_login_attempts_total[5m])) by (ip)",
+          "legendFormat": "IP: {{ip}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "RBM Dual Signature Locked Users Count",
+      "type": "stat",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "security_rbm_approval_locked_users_total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Cross-Tenant Access Interceptions (RLS Blocks)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": "Prometheus",
+          "expr": "sum(rate(security_tenant_isolation_breaches_total[5m])) by (tenant_id)",
+          "legendFormat": "Tenant ID: {{tenant_id}}",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 36,
+  "tags": ["security", "compliance"]
+}

@@ -1,0 +1,55 @@
+{
+  "systemName": "ClinCommand OS™",
+  "version": "Phase 15.2 -> 15.7 Locked Release",
+  "systemOwner": "Dr. Bhupesh Dewan",
+  "location": "Mumbai, India",
+  "copyrightNotice": "© Dr. Bhupesh Dewan, Mumbai, India — All Rights Reserved",
+  "licenseStatus": "Proprietary / Closed System / No Redistribution Allowed",
+  "certificationDate": "2026-06-04T18:02:53Z",
+  "gxpStatus": "FULLY_CERTIFIED_GAMP_5_CAT_4",
+  "regulatoryStandards": [
+    "FDA 21 CFR Part 11",
+    "GAMP 5 Category 4",
+    "Annex 11",
+    "HIPAA compliant"
+  ],
+  "checksumLock": {
+    "releaseSeal": "c0dd3cc73f4fb495837a71846b0811e5c3ad5b8e906981cfb2bbcf73e13d9988",
+    "checksumsJson": "e2df78ac7db21a2c3a504d6072120be83b27be63bf903d6d5eb8ea5cfb88f3be",
+    "integrityStatus": "INTEGRITY_VERIFIED"
+  },
+  "validationSummary": {
+    "totalTests": 125,
+    "passedTests": 125,
+    "failedTests": 0,
+    "flakyTests": 0,
+    "verdict": "VERIFICATION_SUCCESSFUL_PASS"
+  },
+  "observabilityBaseline": {
+    "metricsEnabled": true,
+    "sloCompliance": {
+      "p95Latency": "120ms (Target <= 200ms)",
+      "eproSyncLag": "40s (Target <= 60s)",
+      "telemetryLossRate": "0.0% (Target <= 0.1%)"
+    },
+    "distributedTracing": "Active across API Core, RBM workflow, ePRO sync, and Wearables gateway"
+  },
+  "tenantControl": {
+    "activeTenants": [
+      {
+        "tenantId": 2,
+        "name": "NovaBio Clinical Research",
+        "domain": "novabio.com",
+        "status": "ACTIVE_PILOT_ONLY"
+      }
+    ],
+    "tenantIsolationEnforcement": "Strictly Partitioned at Database RLS and API Routing layer"
+  },
+  "legalAttributionCheck": {
+    "appFooterAttribution": "ENABLED",
+    "aboutTabAttribution": "ENABLED",
+    "userManualAttribution": "ENABLED",
+    "auditStreamAttribution": "ENABLED",
+    "reportExportsAttribution": "ENABLED"
+  }
+}

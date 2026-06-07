@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-06-04T01:41:51.464Z",
+  "events": [
+    {
+      "eventType": "PREDICTIVE_RISK_CHECK",
+      "data": {
+        "riskScore": 0,
+        "prediction": "STABLE",
+        "timestamp": "2026-06-04T01:41:51.461Z"
+      }
+    },
+    {
+      "eventType": "PREDICTIVE_RISK_CHECK",
+      "data": {
+        "riskScore": 0,
+        "prediction": "STABLE",
+        "timestamp": "2026-06-04T01:41:51.461Z"
+      }
+    },
+    {
+      "eventType": "PREDICTIVE_RISK_CHECK",
+      "data": {
+        "riskScore": 90,
+        "prediction": "SYSTEM_PRE_THROTTLE",
+        "timestamp": "2026-06-04T01:41:51.461Z"
+      }
+    },
+    {
+      "eventType": "REGIONAL_FAILOVER_TRIGGERED",
+      "data": {
+        "from": "ap-south-1",
+        "to": "us-east-1"
+      }
+    },
+    {
+      "eventType": "SLO_BREACHES_ENFORCED",
+      "data": [
+        {
+          "sloId": "SLO-API-LATENCY",
+          "name": "API Route P95 Response Latency",
+          "limit": 200,
+          "actual": 280,
+          "severity": "CRITICAL"
+        },
+        {
+          "sloId": "SLO-EPRO-LAG",
+          "name": "ePRO Ingestion Synchronization Lag",
+          "limit": 60,
+          "actual": 85,
+          "severity": "WARNING"
+        },
+        {
+          "sloId": "SLO-TELEM-DROP",
+          "name": "Wearables Telemetry Package Drop Rate",
+          "limit": 0.1,
+          "actual": 0.15,
+          "severity": "CRITICAL"
+        }
+      ]
+    }
+  ]
+}

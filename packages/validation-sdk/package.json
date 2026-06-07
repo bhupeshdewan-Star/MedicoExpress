@@ -1,0 +1,8 @@
+{
+  "name": "validation-sdk",
+  "version": "1.0.0",
+  "description": "ClinCommand OS™ - GAMP 5 automated Verification Test SDK",
+  "private": true,
+  "main": "index.js",
+  "type": "module"
+}

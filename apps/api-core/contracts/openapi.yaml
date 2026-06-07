@@ -1,0 +1,298 @@
+openapi: 3.1.0
+info:
+  title: ClinCommand OS™ Enterprise API Specifications
+  version: 1.0.0
+  description: OpenAPI 3.1.0 specification for identity management, SCIM user syncing, SaaS billing, AI risk governance, and GxP validation.
+
+servers:
+  - url: http://localhost:5000/api/v1
+    description: Local Development Server
+
+paths:
+  /auth/login:
+    post:
+      summary: Authenticate User
+      description: Logs in a user and returns a short-lived access token along with a rotating refresh token.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - username
+                - password
+              properties:
+                username:
+                  type: string
+                  example: admin_gxp
+                password:
+                  type: string
+                  format: password
+                  example: securePassword123
+      responses:
+        '200':
+          description: Successful authentication
+          headers:
+            Set-Cookie:
+              schema:
+                type: string
+                description: HTTP-only session refresh token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    description: JWT Access Token
+                  refreshToken:
+                    type: string
+                    description: Rotated Refresh Token
+        '401':
+          description: Authentication failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /auth/refresh:
+    post:
+      summary: Rotate Access Token
+      description: Validates a rotating refresh token, revoking the old token and issuing a new pair.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - refreshToken
+              properties:
+                refreshToken:
+                  type: string
+      responses:
+        '200':
+          description: Token rotated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  refreshToken:
+                    type: string
+        '401':
+          description: Invalid or replayed token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /scim/v2/Users:
+    post:
+      summary: Create SCIM User
+      description: Provision a new user from enterprise Identity Providers.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SCIMUser'
+      responses:
+        '201':
+          description: User created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SCIMUser'
+        '409':
+          description: User already exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /scim/v2/Users/{id}:
+    put:
+      summary: Update SCIM User
+      description: Completely update user resource properties.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SCIMUser'
+      responses:
+        '200':
+          description: User updated
+        '404':
+          description: User not found
+
+    delete:
+      summary: De-provision SCIM User
+      description: Deactivates or removes a user.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: User deleted/disabled
+
+  /billing/stripe/checkout:
+    post:
+      summary: Create Stripe Billing Session
+      description: Generates a session checkout link for managing tenant billing plans.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - planId
+              properties:
+                planId:
+                  type: string
+                  enum: [starter, professional, enterprise, validated_enterprise]
+      responses:
+        '200':
+          description: Checkout session created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+
+  /ai/governance/prompts:
+    get:
+      summary: Get Governed Prompts
+      description: Retrieve prompt versions.
+      responses:
+        '200':
+          description: Successful retrieval
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PromptRegistry'
+
+  /compliance/validate:
+    post:
+      summary: Trigger Validation Run
+      description: Triggers installation, operational, and performance checks.
+      responses:
+        '200':
+          description: Validation completed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [PASSED, FAILED]
+                  iq:
+                    type: string
+                  oq:
+                    type: string
+                  pq:
+                    type: string
+
+  /compliance/audit/verify:
+    post:
+      summary: Validate Merkle Logs
+      description: Checks cryptographic hash blocks linking the audit trail history.
+      responses:
+        '200':
+          description: Verification report output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [VALID, TAMPERED]
+                  verifiedBlocks:
+                    type: integer
+
+components:
+  schemas:
+    SCIMUser:
+      type: object
+      required:
+        - schemas
+        - userName
+        - emails
+      properties:
+        schemas:
+          type: array
+          items:
+            type: string
+          example: ["urn:ietf:params:scim:schemas:core:2.0:User"]
+        userName:
+          type: string
+          example: john.doe@globalpharma.com
+        name:
+          type: object
+          properties:
+            familyName:
+              type: string
+              example: Doe
+            givenName:
+              type: string
+              example: John
+        emails:
+          type: array
+          items:
+            type: object
+            properties:
+              value:
+                type: string
+              primary:
+                type: boolean
+          example: [{"value": "john.doe@globalpharma.com", "primary": true}]
+        active:
+          type: boolean
+          default: true
+
+    PromptRegistry:
+      type: object
+      properties:
+        id:
+          type: integer
+        promptKey:
+          type: string
+        promptTemplate:
+          type: string
+        version:
+          type: string
+        status:
+          type: string
+          enum: [Draft, Review, Approved, Retired]
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Bad Request
+        message:
+          type: string
+          example: The requested input validation failed.
+        details:
+          type: object

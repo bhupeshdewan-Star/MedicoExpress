@@ -1,0 +1,178 @@
+version: '3.8'
+
+services:
+  # 1. DATABASE
+  postgres:
+    image: ankane/pgvector:v0.5.1
+    container_name: clincommand-db
+    environment:
+      POSTGRES_DB: clincommand
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: enterprise-secure-db-password-9988
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d clincommand"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # 2. CACHE
+  redis:
+    image: redis:7-alpine
+    container_name: clincommand-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # 3. EVENT BUS (Kafka + Zookeeper)
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: clincommand-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: clincommand-kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  # 4. LOCAL S3 OBJECT STORE (MinIO)
+  minio:
+    image: minio/minio:RELEASE.2024-05-10T01-39-38Z
+    container_name: clincommand-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minio_admin
+      MINIO_ROOT_PASSWORD: minio_admin_secret_key_99
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # 5. MOCK MAIL SERVICE (MailHog)
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: clincommand-mailhog
+    ports:
+      - "1025:1025" # SMTP port
+      - "8025:8025" # HTTP UI port
+
+  # 6. API CORE (Backend Node.js Server)
+  api-core:
+    build:
+      context: ./apps/api-core
+      dockerfile: Dockerfile
+    container_name: clincommand-app
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+      - PORT=8000
+      - JWT_SECRET=clincommand-secret-key-100-percent-secure-gxp-audit
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=enterprise-secure-db-password-9988
+      - DB_NAME=clincommand
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - AI_SERVICE_URL=http://rbm-ai-service:8001
+      - DCT_SERVICE_URL=http://dct-service:8083
+      - EPRO_SERVICE_URL=http://epro-sync-service:8084
+      - RSDV_SERVICE_URL=http://rsdv-service:8085
+      - WEARABLES_GATEWAY_URL=http://wearables-gateway:8082
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+
+  # 7. WEB PORTAL (React/Vite Frontend)
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: clincommand-web
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - api-core
+
+  # 8. DCT SERVICE (Go)
+  dct-service:
+    build:
+      context: ./services/dct-service
+      dockerfile: Dockerfile
+    container_name: clincommand-dct
+    ports:
+      - "8083:8083"
+
+  # 9. ePRO SYNC SERVICE (Go)
+  epro-sync-service:
+    build:
+      context: ./services/epro-sync-service
+      dockerfile: Dockerfile
+    container_name: clincommand-epro-sync
+    ports:
+      - "8084:8084"
+
+  # 10. AI SERVICE (Python FastAPI + XGBoost + SHAP)
+  rbm-ai-service:
+    build:
+      context: ./services/rbm-ai-service
+      dockerfile: Dockerfile
+    container_name: clincommand-rbm-ai
+    ports:
+      - "8001:8001"
+
+  # 11. rSDV SERVICE (Python FastAPI + OCR Pipeline)
+  rsdv-service:
+    build:
+      context: ./services/rsdv-service
+      dockerfile: Dockerfile
+    container_name: clincommand-rsdv
+    ports:
+      - "8085:8085"
+
+  # 12. WEARABLES GATEWAY (Node.js)
+  wearables-gateway:
+    build:
+      context: ./services/wearables-gateway
+      dockerfile: Dockerfile
+    container_name: clincommand-wearables
+    ports:
+      - "8082:8082"
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

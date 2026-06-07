@@ -1,0 +1,42 @@
+{
+  "reportId": "SLO-REP-1780536831071",
+  "generatedAt": "2026-06-04T01:33:51.071Z",
+  "status": "COMPLIANT",
+  "slos": [
+    {
+      "id": "SLO-API-AVAIL",
+      "name": "API Core Endpoint Availability",
+      "target": ">= 99.90%",
+      "current": "99.97%",
+      "status": "PASS"
+    },
+    {
+      "id": "SLO-API-LATENCY",
+      "name": "API Route P95 Response Latency",
+      "target": "<= 200ms",
+      "current": "142ms",
+      "status": "PASS"
+    },
+    {
+      "id": "SLO-EPRO-LAG",
+      "name": "ePRO Ingestion Synchronization Lag",
+      "target": "<= 60s",
+      "current": "42s",
+      "status": "PASS"
+    },
+    {
+      "id": "SLO-TELEM-DROP",
+      "name": "Wearables Telemetry Package Drop Rate",
+      "target": "<= 0.10%",
+      "current": "0.04%",
+      "status": "PASS"
+    },
+    {
+      "id": "SLO-RBM-APPROVE",
+      "name": "RBM Alert E-Signature Approval Rate",
+      "target": ">= 98.0%",
+      "current": "99.1%",
+      "status": "PASS"
+    }
+  ]
+}
