@@ -22,6 +22,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install root dependencies
+        run: npm ci
+
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
@@ -41,3 +50,6 @@ jobs:
 
       - name: Show service URL
         run: echo "${{ steps.deploy.outputs.url }}"
+
+      - name: Run Cloud Run smoke test
+        run: node scripts/verify-cloud-run.mjs --base-url "${{ steps.deploy.outputs.url }}"
