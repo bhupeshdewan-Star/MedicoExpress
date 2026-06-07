@@ -5,7 +5,7 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$Region,
 
-  [string]$ServiceName = 'medicomarketos',
+  [string]$ServiceName = 'medicomarketos-open',
 
   [string]$ImageName = 'gcr.io',
 

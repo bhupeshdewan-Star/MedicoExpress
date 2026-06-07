@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  CLOUD_RUN_SERVICE: clincommand-os
+  CLOUD_RUN_SERVICE: medicomarketos-open
   CLOUD_RUN_REGION: asia-southeast1
 
 jobs:

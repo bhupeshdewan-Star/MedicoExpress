@@ -4,7 +4,8 @@ This repository already contains the Cloud Run deploy workflow in [`.github/work
 
 ## Target Deployment
 
-- Service name: `clincommand-os`
+- Service name: `medicomarketos-open`
+- Human-facing app label: `MedicoMarketOS Open`
 - Region: `asia-southeast1`
 - Platform: Google Cloud Run
 - Runtime port: `8000`
@@ -92,7 +93,7 @@ Optional, only if you use those integrations:
 If you want to run the same flow locally:
 
 ```powershell
-.\scripts\deploy-cloud-run.ps1 -ProjectId YOUR_GCP_PROJECT -Region asia-southeast1 -RunSmokeTest
+.\scripts\deploy-cloud-run.ps1 -ProjectId YOUR_GCP_PROJECT -Region asia-southeast1 -ServiceName medicomarketos-open -RunSmokeTest
 ```
 
 Or, if you already have the live service URL:
